@@ -5,3 +5,4 @@ instance/
 *.pyo
 .log/
 .pdf
+.env
