@@ -1,0 +1,754 @@
+2025-08-16 15:46:24 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 15:47:07 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 15:48:22 | INFO     | voice_assistant.database | handle_passthru:517 | ✍️ Passthru: Updating database for CallSid: bf2d8d816b04cdf278a7662d9b2c198g
+2025-08-16 15:48:24 | INFO     | voice_assistant.database | handle_passthru:527 | ✅ Passthru: Database updated successfully for CallSid: bf2d8d816b04cdf278a7662d9b2c198g
+2025-08-16 15:48:24 | INFO     | voice_assistant.database | old_websocket_endpoint:1220 | Looking up customer data by CallSid: bf2d8d816b04cdf278a7662d9b2c198g
+2025-08-16 15:48:24 | INFO     | voice_assistant.database | old_websocket_endpoint:1237 | Looking up call session in database by CallSid: bf2d8d816b04cdf278a7662d9b2c198g
+2025-08-16 15:48:25 | INFO     | voice_assistant.database | old_websocket_endpoint:1254 | ✅ Found customer in database: Kushal
+2025-08-16 15:51:27 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 15:52:45 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 15:53:00 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 15:53:26 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 15:54:36 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 15:54:56 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 15:55:08 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 15:57:01 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 15:57:47 | INFO     | voice_assistant.database | handle_passthru:517 | ✍️ Passthru: Updating database for CallSid: d95b23712d247e8376bd83de7a2b198g
+2025-08-16 15:57:49 | INFO     | voice_assistant.database | handle_passthru:527 | ✅ Passthru: Database updated successfully for CallSid: d95b23712d247e8376bd83de7a2b198g
+2025-08-16 15:57:49 | INFO     | voice_assistant.database | old_websocket_endpoint:1239 | Looking up customer data by CallSid: d95b23712d247e8376bd83de7a2b198g
+2025-08-16 15:57:49 | INFO     | voice_assistant.database | old_websocket_endpoint:1256 | Looking up call session in database by CallSid: d95b23712d247e8376bd83de7a2b198g
+2025-08-16 15:57:50 | INFO     | voice_assistant.database | old_websocket_endpoint:1273 | ✅ Found customer in database: Kushal
+2025-08-16 16:01:53 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 16:02:35 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 16:05:44 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 16:06:21 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 16:12:02 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 16:14:35 | INFO     | voice_assistant.database | handle_passthru:517 | ✍️ Passthru: Updating database for CallSid: 07d798731a3c9b620c052f6e1282198g
+2025-08-16 16:14:37 | INFO     | voice_assistant.database | handle_passthru:527 | ✅ Passthru: Database updated successfully for CallSid: 07d798731a3c9b620c052f6e1282198g
+2025-08-16 16:14:37 | INFO     | voice_assistant.database | old_websocket_endpoint:1239 | Looking up customer data by CallSid: 07d798731a3c9b620c052f6e1282198g
+2025-08-16 16:14:37 | INFO     | voice_assistant.database | old_websocket_endpoint:1256 | Looking up call session in database by CallSid: 07d798731a3c9b620c052f6e1282198g
+2025-08-16 16:14:39 | INFO     | voice_assistant.database | old_websocket_endpoint:1273 | ✅ Found customer in database: Kushal
+2025-08-16 16:57:14 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 16:58:14 | INFO     | voice_assistant.database | handle_passthru:568 | ✍️ Passthru: Updating database for CallSid: 12db7ae164d543539b1a5c9ac996198g
+2025-08-16 16:58:16 | INFO     | voice_assistant.database | handle_passthru:578 | ✅ Passthru: Database updated successfully for CallSid: 12db7ae164d543539b1a5c9ac996198g
+2025-08-16 16:58:16 | INFO     | voice_assistant.database | old_websocket_endpoint:1302 | Looking up customer data by CallSid: 12db7ae164d543539b1a5c9ac996198g
+2025-08-16 16:58:16 | INFO     | voice_assistant.database | old_websocket_endpoint:1319 | Looking up call session in database by CallSid: 12db7ae164d543539b1a5c9ac996198g
+2025-08-16 16:58:17 | INFO     | voice_assistant.database | old_websocket_endpoint:1336 | ✅ Found customer in database: Kushal
+2025-08-16 17:16:08 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 17:16:33 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 17:17:03 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 17:17:39 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 17:18:29 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 17:25:34 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 17:27:31 | INFO     | voice_assistant.database | handle_passthru:611 | ✍️ Passthru: Updating database for CallSid: da028f8a80f9b4cc33f3409e7dec198g
+2025-08-16 17:27:33 | INFO     | voice_assistant.database | handle_passthru:621 | ✅ Passthru: Database updated successfully for CallSid: da028f8a80f9b4cc33f3409e7dec198g
+2025-08-16 17:27:34 | INFO     | voice_assistant.database | old_websocket_endpoint:1357 | Looking up customer data by CallSid: da028f8a80f9b4cc33f3409e7dec198g
+2025-08-16 17:27:34 | INFO     | voice_assistant.database | old_websocket_endpoint:1374 | Looking up call session in database by CallSid: da028f8a80f9b4cc33f3409e7dec198g
+2025-08-16 17:27:35 | INFO     | voice_assistant.database | old_websocket_endpoint:1391 | ✅ Found customer in database: Kushal
+2025-08-16 17:35:11 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 17:55:09 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 17:56:51 | INFO     | voice_assistant.database | handle_passthru:618 | ✍️ Passthru: Updating database for CallSid: c700555d8fda9a8b4fbc81a41011198g
+2025-08-16 17:56:53 | INFO     | voice_assistant.database | handle_passthru:628 | ✅ Passthru: Database updated successfully for CallSid: c700555d8fda9a8b4fbc81a41011198g
+2025-08-16 17:56:53 | INFO     | voice_assistant.database | old_websocket_endpoint:1512 | Looking up customer data by CallSid: c700555d8fda9a8b4fbc81a41011198g
+2025-08-16 17:56:53 | INFO     | voice_assistant.database | old_websocket_endpoint:1529 | Looking up call session in database by CallSid: c700555d8fda9a8b4fbc81a41011198g
+2025-08-16 17:56:54 | INFO     | voice_assistant.database | old_websocket_endpoint:1546 | ✅ Found customer in database: Kushal
+2025-08-16 18:03:06 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 18:05:57 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 18:13:27 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 18:19:13 | INFO     | voice_assistant.database | handle_passthru:650 | ✍️ Passthru: Updating database for CallSid: 483a348a4ec9655ed98fbfff0418198g
+2025-08-16 18:19:15 | INFO     | voice_assistant.database | handle_passthru:660 | ✅ Passthru: Database updated successfully for CallSid: 483a348a4ec9655ed98fbfff0418198g
+2025-08-16 18:19:15 | INFO     | voice_assistant.database | old_websocket_endpoint:1544 | Looking up customer data by CallSid: 483a348a4ec9655ed98fbfff0418198g
+2025-08-16 18:19:15 | INFO     | voice_assistant.database | old_websocket_endpoint:1561 | Looking up call session in database by CallSid: 483a348a4ec9655ed98fbfff0418198g
+2025-08-16 18:19:16 | INFO     | voice_assistant.database | old_websocket_endpoint:1578 | ✅ Found customer in database: Kushal
+2025-08-16 18:37:29 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 18:57:55 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 21:58:42 | ERROR    | voice_assistant.database | lifespan:57 | Failed to establish database connection
+2025-08-16 21:58:49 | ERROR    | voice_assistant.database | lifespan:57 | Failed to establish database connection
+2025-08-16 21:58:58 | ERROR    | voice_assistant.database | lifespan:57 | Failed to establish database connection
+2025-08-16 21:59:02 | ERROR    | voice_assistant.database | lifespan:57 | Failed to establish database connection
+2025-08-16 21:59:11 | ERROR    | voice_assistant.database | lifespan:57 | Failed to establish database connection
+2025-08-16 21:59:15 | ERROR    | voice_assistant.database | lifespan:57 | Failed to establish database connection
+2025-08-16 21:59:25 | ERROR    | voice_assistant.database | lifespan:57 | Failed to establish database connection
+2025-08-16 21:59:44 | ERROR    | voice_assistant.database | lifespan:57 | Failed to establish database connection
+2025-08-16 22:02:58 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 22:51:30 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 22:53:19 | INFO     | voice_assistant.database | handle_passthru:650 | ✍️ Passthru: Updating database for CallSid: 4a04f481c108c0716e2af76bbb28198g
+2025-08-16 22:53:21 | INFO     | voice_assistant.database | handle_passthru:660 | ✅ Passthru: Database updated successfully for CallSid: 4a04f481c108c0716e2af76bbb28198g
+2025-08-16 22:53:21 | INFO     | voice_assistant.database | old_websocket_endpoint:1544 | Looking up customer data by CallSid: 4a04f481c108c0716e2af76bbb28198g
+2025-08-16 22:53:21 | INFO     | voice_assistant.database | old_websocket_endpoint:1561 | Looking up call session in database by CallSid: 4a04f481c108c0716e2af76bbb28198g
+2025-08-16 22:53:23 | INFO     | voice_assistant.database | old_websocket_endpoint:1578 | ✅ Found customer in database: Kushal
+2025-08-16 22:55:51 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-16 22:56:31 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:01:24 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:02:38 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:09:06 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:09:44 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:09:54 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:14:49 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:26:15 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:26:57 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:28:30 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:32:07 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:33:01 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:35:51 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:39:18 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:42:47 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:46:16 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:49:29 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:50:44 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 01:52:04 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 12:12:02 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 12:40:45 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 12:43:59 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:06:28 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:11:04 | INFO     | voice_assistant.database | handle_passthru:517 | ✍️ Passthru: Updating database for CallSid: 815aadb9d2f00da861ff98d25752198h
+2025-08-17 13:11:06 | INFO     | voice_assistant.database | handle_passthru:527 | ✅ Passthru: Database updated successfully for CallSid: 815aadb9d2f00da861ff98d25752198h
+2025-08-17 13:11:06 | INFO     | voice_assistant.database | old_websocket_endpoint:1239 | Looking up customer data by CallSid: 815aadb9d2f00da861ff98d25752198h
+2025-08-17 13:11:06 | INFO     | voice_assistant.database | old_websocket_endpoint:1256 | Looking up call session in database by CallSid: 815aadb9d2f00da861ff98d25752198h
+2025-08-17 13:11:07 | INFO     | voice_assistant.database | old_websocket_endpoint:1273 | ✅ Found customer in database: Kushal
+2025-08-17 13:15:52 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:16:31 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:20:54 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:32:50 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:33:24 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:33:58 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:34:13 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:40:08 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:41:22 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:42:23 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:43:15 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:45:01 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:46:41 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:46:52 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:47:03 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:54:00 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:54:18 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:54:40 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:54:51 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:55:03 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:55:13 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 13:55:53 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 14:43:06 | ERROR    | voice_assistant.database | lifespan:57 | Failed to establish database connection
+2025-08-17 15:08:38 | ERROR    | voice_assistant.database | lifespan:57 | Failed to establish database connection
+2025-08-17 18:47:52 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-17 18:52:34 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-18 03:21:53 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-18 03:22:51 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-18 03:23:00 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-18 03:39:00 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-18 03:40:49 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-18 03:41:09 | INFO     | voice_assistant.database | handle_passthru:599 | ✍️ Passthru: Updating database for CallSid: d16578ccec5608db38825a8a046e198i
+2025-08-18 03:41:10 | INFO     | voice_assistant.database | handle_passthru:609 | ✅ Passthru: Database updated successfully for CallSid: d16578ccec5608db38825a8a046e198i
+2025-08-18 03:41:11 | INFO     | voice_assistant.database | old_websocket_endpoint:1347 | Looking up customer data by CallSid: d16578ccec5608db38825a8a046e198i
+2025-08-18 03:41:11 | INFO     | voice_assistant.database | old_websocket_endpoint:1364 | Looking up call session in database by CallSid: d16578ccec5608db38825a8a046e198i
+2025-08-18 03:41:11 | INFO     | voice_assistant.database | old_websocket_endpoint:1381 | ✅ Found customer in database: Kushal
+2025-08-19 23:05:16 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-19 23:43:31 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 00:46:06 | INFO     | voice_assistant.database | handle_passthru:574 | ✍️ Passthru: Updating database for CallSid: de17a58e9f0c2df0933db72b3cd5198k
+2025-08-20 00:46:07 | INFO     | voice_assistant.database | handle_passthru:584 | ✅ Passthru: Database updated successfully for CallSid: de17a58e9f0c2df0933db72b3cd5198k
+2025-08-20 00:46:07 | INFO     | voice_assistant.database | old_websocket_endpoint:1322 | Looking up customer data by CallSid: de17a58e9f0c2df0933db72b3cd5198k
+2025-08-20 00:46:07 | INFO     | voice_assistant.database | old_websocket_endpoint:1339 | Looking up call session in database by CallSid: de17a58e9f0c2df0933db72b3cd5198k
+2025-08-20 00:46:08 | INFO     | voice_assistant.database | old_websocket_endpoint:1356 | ✅ Found customer in database: Kushal
+2025-08-20 00:47:47 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:14:05 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:14:32 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:15:04 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:15:49 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:24:18 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:24:47 | INFO     | voice_assistant.database | handle_passthru:580 | ✍️ Passthru: Updating database for CallSid: c9f090a308dd11d4c5282283a5a3198k
+2025-08-20 01:24:48 | INFO     | voice_assistant.database | handle_passthru:590 | ✅ Passthru: Database updated successfully for CallSid: c9f090a308dd11d4c5282283a5a3198k
+2025-08-20 01:24:48 | INFO     | voice_assistant.database | old_websocket_endpoint:1328 | Looking up customer data by CallSid: c9f090a308dd11d4c5282283a5a3198k
+2025-08-20 01:24:48 | INFO     | voice_assistant.database | old_websocket_endpoint:1345 | Looking up call session in database by CallSid: c9f090a308dd11d4c5282283a5a3198k
+2025-08-20 01:24:48 | INFO     | voice_assistant.database | old_websocket_endpoint:1362 | ✅ Found customer in database: Kushal
+2025-08-20 01:27:48 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:28:36 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:29:49 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:31:27 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:31:43 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:32:15 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:48:43 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:49:09 | INFO     | voice_assistant.database | handle_passthru:585 | ✍️ Passthru: Updating database for CallSid: b3c83c2cc562bc1bc8b93acbdd4e198k
+2025-08-20 01:49:09 | INFO     | voice_assistant.database | handle_passthru:595 | ✅ Passthru: Database updated successfully for CallSid: b3c83c2cc562bc1bc8b93acbdd4e198k
+2025-08-20 01:49:09 | INFO     | voice_assistant.database | old_websocket_endpoint:1333 | Looking up customer data by CallSid: b3c83c2cc562bc1bc8b93acbdd4e198k
+2025-08-20 01:49:09 | INFO     | voice_assistant.database | old_websocket_endpoint:1350 | Looking up call session in database by CallSid: b3c83c2cc562bc1bc8b93acbdd4e198k
+2025-08-20 01:49:09 | INFO     | voice_assistant.database | old_websocket_endpoint:1367 | ✅ Found customer in database: Kushal
+2025-08-20 01:51:00 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:51:09 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:51:25 | INFO     | voice_assistant.database | handle_passthru:574 | ✍️ Passthru: Updating database for CallSid: 631f458ae6c550ec271b0c1f406b198k
+2025-08-20 01:51:25 | INFO     | voice_assistant.database | handle_passthru:584 | ✅ Passthru: Database updated successfully for CallSid: 631f458ae6c550ec271b0c1f406b198k
+2025-08-20 01:51:26 | INFO     | voice_assistant.database | old_websocket_endpoint:1322 | Looking up customer data by CallSid: 631f458ae6c550ec271b0c1f406b198k
+2025-08-20 01:51:26 | INFO     | voice_assistant.database | old_websocket_endpoint:1339 | Looking up call session in database by CallSid: 631f458ae6c550ec271b0c1f406b198k
+2025-08-20 01:51:26 | INFO     | voice_assistant.database | old_websocket_endpoint:1356 | ✅ Found customer in database: Kushal
+2025-08-20 01:55:37 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:55:46 | ERROR    | voice_assistant.database | lifespan:57 | Failed to establish database connection
+2025-08-20 01:57:07 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:59:03 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 01:59:43 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 02:00:23 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 02:18:38 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 02:18:50 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 02:19:13 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 23:33:15 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 23:33:53 | INFO     | voice_assistant.database | handle_passthru:606 | ✍️ Passthru: Updating database for CallSid: 49086099649879b1c855c40df87c198k
+2025-08-20 23:33:54 | INFO     | voice_assistant.database | handle_passthru:616 | ✅ Passthru: Database updated successfully for CallSid: 49086099649879b1c855c40df87c198k
+2025-08-20 23:33:54 | INFO     | voice_assistant.database | old_websocket_endpoint:1354 | Looking up customer data by CallSid: 49086099649879b1c855c40df87c198k
+2025-08-20 23:33:54 | INFO     | voice_assistant.database | old_websocket_endpoint:1371 | Looking up call session in database by CallSid: 49086099649879b1c855c40df87c198k
+2025-08-20 23:33:54 | INFO     | voice_assistant.database | old_websocket_endpoint:1388 | ✅ Found customer in database: Kushal
+2025-08-20 23:39:51 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 23:57:25 | INFO     | voice_assistant.database | handle_passthru:606 | ✍️ Passthru: Updating database for CallSid: 1429152e327657c9b95be3f8ad8a198k
+2025-08-20 23:57:26 | INFO     | voice_assistant.database | handle_passthru:616 | ✅ Passthru: Database updated successfully for CallSid: 1429152e327657c9b95be3f8ad8a198k
+2025-08-20 23:58:28 | INFO     | voice_assistant.database | handle_passthru:606 | ✍️ Passthru: Updating database for CallSid: b652b26a92e0de4a28ded1ecfcf5198k
+2025-08-20 23:58:30 | INFO     | voice_assistant.database | handle_passthru:616 | ✅ Passthru: Database updated successfully for CallSid: b652b26a92e0de4a28ded1ecfcf5198k
+2025-08-20 23:59:17 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-20 23:59:43 | INFO     | voice_assistant.database | handle_passthru:606 | ✍️ Passthru: Updating database for CallSid: 37e4659f71d0f7d476a25acc4c8a198k
+2025-08-20 23:59:44 | INFO     | voice_assistant.database | handle_passthru:616 | ✅ Passthru: Database updated successfully for CallSid: 37e4659f71d0f7d476a25acc4c8a198k
+2025-08-21 00:00:09 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 00:09:07 | INFO     | voice_assistant.database | handle_passthru:574 | ✍️ Passthru: Updating database for CallSid: ffbbd09a9e8fbd213688d249b5a1198l
+2025-08-21 00:09:08 | INFO     | voice_assistant.database | handle_passthru:584 | ✅ Passthru: Database updated successfully for CallSid: ffbbd09a9e8fbd213688d249b5a1198l
+2025-08-21 00:10:09 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 00:10:35 | INFO     | voice_assistant.database | handle_passthru:574 | ✍️ Passthru: Updating database for CallSid: 7b2811b144dbd4531726f1d37c28198l
+2025-08-21 00:10:36 | INFO     | voice_assistant.database | handle_passthru:584 | ✅ Passthru: Database updated successfully for CallSid: 7b2811b144dbd4531726f1d37c28198l
+2025-08-21 00:10:36 | INFO     | voice_assistant.database | old_websocket_endpoint:1322 | Looking up customer data by CallSid: 7b2811b144dbd4531726f1d37c28198l
+2025-08-21 00:10:36 | INFO     | voice_assistant.database | old_websocket_endpoint:1339 | Looking up call session in database by CallSid: 7b2811b144dbd4531726f1d37c28198l
+2025-08-21 00:10:37 | INFO     | voice_assistant.database | old_websocket_endpoint:1356 | ✅ Found customer in database: Kushal
+2025-08-21 00:47:49 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 00:48:11 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 00:48:21 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 00:48:47 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 00:48:57 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 00:53:44 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 00:54:07 | INFO     | voice_assistant.database | handle_passthru:606 | ✍️ Passthru: Updating database for CallSid: 1b144e05d96607a1082966259c16198l
+2025-08-21 00:54:07 | INFO     | voice_assistant.database | handle_passthru:616 | ✅ Passthru: Database updated successfully for CallSid: 1b144e05d96607a1082966259c16198l
+2025-08-21 00:54:08 | INFO     | voice_assistant.database | old_websocket_endpoint:1362 | Looking up customer data by CallSid: 1b144e05d96607a1082966259c16198l
+2025-08-21 00:54:08 | INFO     | voice_assistant.database | old_websocket_endpoint:1379 | Looking up call session in database by CallSid: 1b144e05d96607a1082966259c16198l
+2025-08-21 00:54:08 | INFO     | voice_assistant.database | old_websocket_endpoint:1396 | ✅ Found customer in database: Kushal
+2025-08-21 00:57:45 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 01:06:43 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 01:07:17 | INFO     | voice_assistant.database | handle_passthru:615 | ✍️ Passthru: Updating database for CallSid: 254632c8cda2ccbf3864e8e9cd04198l
+2025-08-21 01:07:19 | INFO     | voice_assistant.database | handle_passthru:625 | ✅ Passthru: Database updated successfully for CallSid: 254632c8cda2ccbf3864e8e9cd04198l
+2025-08-21 01:07:19 | INFO     | voice_assistant.database | old_websocket_endpoint:1371 | Looking up customer data by CallSid: 254632c8cda2ccbf3864e8e9cd04198l
+2025-08-21 01:07:19 | INFO     | voice_assistant.database | old_websocket_endpoint:1388 | Looking up call session in database by CallSid: 254632c8cda2ccbf3864e8e9cd04198l
+2025-08-21 01:07:20 | INFO     | voice_assistant.database | old_websocket_endpoint:1405 | ✅ Found customer in database: Kushal
+2025-08-21 01:10:40 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 01:11:07 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 01:12:52 | INFO     | voice_assistant.database | handle_passthru:615 | ✍️ Passthru: Updating database for CallSid: fa9d5eaff16b193938cdc5ae7b46198l
+2025-08-21 01:12:53 | INFO     | voice_assistant.database | handle_passthru:625 | ✅ Passthru: Database updated successfully for CallSid: fa9d5eaff16b193938cdc5ae7b46198l
+2025-08-21 01:12:54 | INFO     | voice_assistant.database | old_websocket_endpoint:1371 | Looking up customer data by CallSid: fa9d5eaff16b193938cdc5ae7b46198l
+2025-08-21 01:12:54 | INFO     | voice_assistant.database | old_websocket_endpoint:1388 | Looking up call session in database by CallSid: fa9d5eaff16b193938cdc5ae7b46198l
+2025-08-21 01:12:54 | INFO     | voice_assistant.database | old_websocket_endpoint:1405 | ✅ Found customer in database: Kushal
+2025-08-21 01:14:25 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 02:04:49 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 02:05:48 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 02:06:05 | INFO     | voice_assistant.database | handle_passthru:615 | ✍️ Passthru: Updating database for CallSid: a6e32253b9717dbf64e5e128ab02198l
+2025-08-21 02:06:06 | INFO     | voice_assistant.database | handle_passthru:625 | ✅ Passthru: Database updated successfully for CallSid: a6e32253b9717dbf64e5e128ab02198l
+2025-08-21 02:06:07 | INFO     | voice_assistant.database | old_websocket_endpoint:1371 | Looking up customer data by CallSid: a6e32253b9717dbf64e5e128ab02198l
+2025-08-21 02:06:07 | INFO     | voice_assistant.database | old_websocket_endpoint:1388 | Looking up call session in database by CallSid: a6e32253b9717dbf64e5e128ab02198l
+2025-08-21 02:06:07 | INFO     | voice_assistant.database | old_websocket_endpoint:1405 | ✅ Found customer in database: Kushal
+2025-08-21 02:07:42 | INFO     | voice_assistant.database | handle_passthru:615 | ✍️ Passthru: Updating database for CallSid: 00fa5cd342c7bb39f56117ec3c49198l
+2025-08-21 02:07:43 | INFO     | voice_assistant.database | handle_passthru:625 | ✅ Passthru: Database updated successfully for CallSid: 00fa5cd342c7bb39f56117ec3c49198l
+2025-08-21 02:07:44 | INFO     | voice_assistant.database | old_websocket_endpoint:1371 | Looking up customer data by CallSid: 00fa5cd342c7bb39f56117ec3c49198l
+2025-08-21 02:07:44 | INFO     | voice_assistant.database | old_websocket_endpoint:1388 | Looking up call session in database by CallSid: 00fa5cd342c7bb39f56117ec3c49198l
+2025-08-21 02:07:44 | INFO     | voice_assistant.database | old_websocket_endpoint:1405 | ✅ Found customer in database: Kushal
+2025-08-21 02:13:24 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 02:13:44 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 02:13:52 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 02:14:32 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 02:14:46 | INFO     | voice_assistant.database | handle_passthru:615 | ✍️ Passthru: Updating database for CallSid: 6482a0326e784e10b9a17b0cd0b4198l
+2025-08-21 02:14:47 | INFO     | voice_assistant.database | handle_passthru:625 | ✅ Passthru: Database updated successfully for CallSid: 6482a0326e784e10b9a17b0cd0b4198l
+2025-08-21 02:14:47 | INFO     | voice_assistant.database | old_websocket_endpoint:1364 | Looking up customer data by CallSid: 6482a0326e784e10b9a17b0cd0b4198l
+2025-08-21 02:14:47 | INFO     | voice_assistant.database | old_websocket_endpoint:1381 | Looking up call session in database by CallSid: 6482a0326e784e10b9a17b0cd0b4198l
+2025-08-21 02:14:47 | INFO     | voice_assistant.database | old_websocket_endpoint:1398 | ✅ Found customer in database: Kushal
+2025-08-21 02:15:33 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 02:15:57 | INFO     | voice_assistant.database | handle_passthru:615 | ✍️ Passthru: Updating database for CallSid: db48168c3d9665e2e0349fdcf603198l
+2025-08-21 02:15:58 | INFO     | voice_assistant.database | handle_passthru:625 | ✅ Passthru: Database updated successfully for CallSid: db48168c3d9665e2e0349fdcf603198l
+2025-08-21 02:15:58 | INFO     | voice_assistant.database | old_websocket_endpoint:1371 | Looking up customer data by CallSid: db48168c3d9665e2e0349fdcf603198l
+2025-08-21 02:15:58 | INFO     | voice_assistant.database | old_websocket_endpoint:1388 | Looking up call session in database by CallSid: db48168c3d9665e2e0349fdcf603198l
+2025-08-21 02:15:58 | INFO     | voice_assistant.database | old_websocket_endpoint:1405 | ✅ Found customer in database: Kushal
+2025-08-21 19:47:13 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 19:49:51 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 20:00:23 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 20:03:19 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-21 20:03:50 | INFO     | voice_assistant.database | handle_passthru:615 | ✍️ Passthru: Updating database for CallSid: 7de1508a37d7906a1da0e6e53e8a198l
+2025-08-21 20:03:51 | INFO     | voice_assistant.database | handle_passthru:625 | ✅ Passthru: Database updated successfully for CallSid: 7de1508a37d7906a1da0e6e53e8a198l
+2025-08-21 20:03:51 | INFO     | voice_assistant.database | old_websocket_endpoint:1371 | Looking up customer data by CallSid: 7de1508a37d7906a1da0e6e53e8a198l
+2025-08-21 20:03:51 | INFO     | voice_assistant.database | old_websocket_endpoint:1388 | Looking up call session in database by CallSid: 7de1508a37d7906a1da0e6e53e8a198l
+2025-08-21 20:03:51 | INFO     | voice_assistant.database | old_websocket_endpoint:1405 | ✅ Found customer in database: Kushal
+2025-08-27 00:08:45 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-27 00:17:22 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-27 00:23:09 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-27 00:23:38 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-27 00:24:47 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-27 00:26:56 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-27 13:35:58 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-28 01:39:37 | INFO     | voice_assistant.database | lifespan:54 | Database connection established
+2025-08-28 01:40:38 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-28 01:41:17 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-28 01:41:58 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-28 01:42:09 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-28 01:42:22 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-28 01:42:32 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-28 02:12:42 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-28 03:11:04 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-28 03:43:59 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-29 10:27:48 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-29 10:38:48 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-29 10:38:51 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-29 10:38:55 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-29 10:40:01 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-29 11:02:14 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-29 11:11:28 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-29 11:18:29 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-29 11:24:49 | INFO     | voice_assistant.database | lifespan:56 | Database connection established
+2025-08-29 11:25:44 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 11:28:51 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 11:40:50 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 11:41:31 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 11:41:38 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 11:55:47 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 12:00:04 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 12:00:55 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 12:01:10 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 14:15:02 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 14:15:35 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 14:24:02 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 14:24:18 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 14:24:40 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 14:25:30 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 14:25:46 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 14:28:22 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 14:30:24 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-29 14:30:28 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-30 12:08:41 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-30 12:08:44 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-30 18:55:33 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-30 19:11:43 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 03:22:21 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 03:28:12 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 03:28:31 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 03:28:51 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 03:29:08 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 03:30:02 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 03:30:21 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 03:30:56 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 03:32:58 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 03:33:15 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 03:33:34 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:09:28 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:10:17 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:11:44 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:12:27 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:13:38 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:13:57 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:14:29 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:14:47 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:15:16 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:16:33 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:28:00 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:35:12 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:35:15 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:52:16 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-08-31 16:57:17 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 17:02:35 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 17:02:40 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 17:22:54 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 17:27:52 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 17:28:02 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 17:28:12 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 17:28:25 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 18:07:19 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 19:11:35 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 19:13:18 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 19:13:30 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 19:14:13 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 19:14:22 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 19:14:35 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 19:15:16 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 19:15:28 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 19:43:44 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 19:44:13 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 19:54:38 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 20:04:24 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 20:11:22 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 20:13:51 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 20:30:36 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 20:42:03 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 20:43:36 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 20:45:43 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 20:46:38 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 20:55:13 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:03:52 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:06:36 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:06:43 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:06:59 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:07:46 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:09:51 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:10:01 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:10:10 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:12:44 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:12:46 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:13:00 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:13:14 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:13:24 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:18:23 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:20:16 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:20:24 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:20:38 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:21:17 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:23:34 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:23:56 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:27:45 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:28:12 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:29:30 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:31:00 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:35:05 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:37:41 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:38:05 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:38:29 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:38:51 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:40:09 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:41:14 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:41:45 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:43:45 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:44:35 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:46:29 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:46:44 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:47:32 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:48:33 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:48:54 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:51:04 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:51:29 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:54:11 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:54:24 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 21:58:02 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 22:01:17 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 22:08:13 | INFO     | voice_assistant.database | lifespan:58 | Database connection established
+2025-08-31 22:08:23 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 22:08:37 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 22:09:16 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 22:09:36 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 22:09:49 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 22:12:59 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 22:14:08 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 22:19:44 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 22:57:32 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 22:57:43 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 22:58:16 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 22:58:55 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 23:22:19 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 23:58:05 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-08-31 23:58:48 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 9a6969343148dd3d92e2219026a1198v
+2025-08-31 23:58:48 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 9a6969343148dd3d92e2219026a1198v
+2025-08-31 23:58:49 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 9a6969343148dd3d92e2219026a1198v
+2025-08-31 23:58:49 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 9a6969343148dd3d92e2219026a1198v
+2025-08-31 23:58:50 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-08-31 23:59:50 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 40236b8a50429bfd7cdc2df6d37e198v
+2025-08-31 23:59:51 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 40236b8a50429bfd7cdc2df6d37e198v
+2025-08-31 23:59:53 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 40236b8a50429bfd7cdc2df6d37e198v
+2025-08-31 23:59:53 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 40236b8a50429bfd7cdc2df6d37e198v
+2025-08-31 23:59:53 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 02:02:48 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 02:03:27 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: bc9728528d78055d25e4bab0064c1991
+2025-09-01 02:03:28 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: bc9728528d78055d25e4bab0064c1991
+2025-09-01 02:03:29 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: bc9728528d78055d25e4bab0064c1991
+2025-09-01 02:03:29 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: bc9728528d78055d25e4bab0064c1991
+2025-09-01 02:03:29 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 02:07:57 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 02:08:24 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: a069281a5eb6677bb73f22485d101991
+2025-09-01 02:08:24 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: a069281a5eb6677bb73f22485d101991
+2025-09-01 02:08:25 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: a069281a5eb6677bb73f22485d101991
+2025-09-01 02:08:25 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: a069281a5eb6677bb73f22485d101991
+2025-09-01 02:08:25 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 02:10:14 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 2407c7851a4a1f29cb67c9e5dd8e1991
+2025-09-01 02:10:15 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 2407c7851a4a1f29cb67c9e5dd8e1991
+2025-09-01 02:10:15 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 2407c7851a4a1f29cb67c9e5dd8e1991
+2025-09-01 02:10:15 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 2407c7851a4a1f29cb67c9e5dd8e1991
+2025-09-01 02:10:15 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 02:11:55 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 462a256ccf5cc82289b3cd487d221991
+2025-09-01 02:11:55 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 462a256ccf5cc82289b3cd487d221991
+2025-09-01 02:11:57 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 462a256ccf5cc82289b3cd487d221991
+2025-09-01 02:11:57 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 462a256ccf5cc82289b3cd487d221991
+2025-09-01 02:11:57 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 03:14:41 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 03:15:28 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: a70bdedef712eb5389afca24ee951991
+2025-09-01 03:15:28 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: a70bdedef712eb5389afca24ee951991
+2025-09-01 03:16:35 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 03:30:41 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 03:31:02 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 249e010e70eaa44b5e1086ab5a541991
+2025-09-01 03:31:03 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 249e010e70eaa44b5e1086ab5a541991
+2025-09-01 03:31:32 | INFO     | voice_assistant.database | lifespan:57 | Database connection established
+2025-09-01 03:39:33 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 03:39:56 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 2312ee7bef2eaa1f7144799a5afb1991
+2025-09-01 03:39:56 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 2312ee7bef2eaa1f7144799a5afb1991
+2025-09-01 03:39:57 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 2312ee7bef2eaa1f7144799a5afb1991
+2025-09-01 03:39:57 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 2312ee7bef2eaa1f7144799a5afb1991
+2025-09-01 03:39:57 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 04:40:29 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 04:41:06 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: b61e32dd22add85394e6e0a43eb71991
+2025-09-01 04:41:06 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: b61e32dd22add85394e6e0a43eb71991
+2025-09-01 04:41:07 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: b61e32dd22add85394e6e0a43eb71991
+2025-09-01 04:41:07 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: b61e32dd22add85394e6e0a43eb71991
+2025-09-01 04:41:07 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 04:54:27 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 04:55:11 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 04:57:24 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 55a1028bfcd1b044897ec171cc8a1991
+2025-09-01 04:57:24 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 55a1028bfcd1b044897ec171cc8a1991
+2025-09-01 04:57:25 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 55a1028bfcd1b044897ec171cc8a1991
+2025-09-01 04:57:25 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 55a1028bfcd1b044897ec171cc8a1991
+2025-09-01 04:57:25 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 05:00:21 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 05:00:51 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 7d877101a52bc4104bcbb1606a461991
+2025-09-01 05:00:51 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 7d877101a52bc4104bcbb1606a461991
+2025-09-01 05:00:52 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 7d877101a52bc4104bcbb1606a461991
+2025-09-01 05:00:52 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 7d877101a52bc4104bcbb1606a461991
+2025-09-01 05:00:52 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 05:02:10 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 05:02:30 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 05:07:05 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 05:12:00 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 05:15:58 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: cda7983a097ccc3291e20aeebfb51991
+2025-09-01 05:15:58 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: cda7983a097ccc3291e20aeebfb51991
+2025-09-01 05:15:58 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: cda7983a097ccc3291e20aeebfb51991
+2025-09-01 05:15:58 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: cda7983a097ccc3291e20aeebfb51991
+2025-09-01 05:15:59 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 05:17:16 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: c44ba73785081c719c2e689b3a271991
+2025-09-01 05:17:16 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: c44ba73785081c719c2e689b3a271991
+2025-09-01 05:17:16 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: c44ba73785081c719c2e689b3a271991
+2025-09-01 05:17:16 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: c44ba73785081c719c2e689b3a271991
+2025-09-01 05:17:16 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 05:21:22 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 05:21:38 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: c72d5507133a2b0b8139deebc8da1991
+2025-09-01 05:21:38 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: c72d5507133a2b0b8139deebc8da1991
+2025-09-01 05:21:39 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: c72d5507133a2b0b8139deebc8da1991
+2025-09-01 05:21:39 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: c72d5507133a2b0b8139deebc8da1991
+2025-09-01 05:21:39 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 05:32:11 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 05:33:32 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 05:35:17 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 05:37:24 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 15:45:53 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 15:46:26 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 5c110d9061b1ba3a6890b0a3c02e1991
+2025-09-01 15:46:26 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 5c110d9061b1ba3a6890b0a3c02e1991
+2025-09-01 15:46:27 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 5c110d9061b1ba3a6890b0a3c02e1991
+2025-09-01 15:46:27 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 5c110d9061b1ba3a6890b0a3c02e1991
+2025-09-01 15:46:27 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 15:48:20 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 15:48:38 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: aadad6440aee991b9c322567d5461991
+2025-09-01 15:48:39 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: aadad6440aee991b9c322567d5461991
+2025-09-01 15:48:39 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: aadad6440aee991b9c322567d5461991
+2025-09-01 15:48:39 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: aadad6440aee991b9c322567d5461991
+2025-09-01 15:48:39 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 21:50:58 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 6bed96322c81c1c18de8509408551991
+2025-09-01 21:50:58 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 6bed96322c81c1c18de8509408551991
+2025-09-01 21:50:59 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 6bed96322c81c1c18de8509408551991
+2025-09-01 21:50:59 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 6bed96322c81c1c18de8509408551991
+2025-09-01 21:50:59 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 22:01:33 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:01:36 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:01:39 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:01:42 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:01:45 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:01:49 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:01:53 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:02:13 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:02:16 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:09:41 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:09:57 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:10:43 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:12:50 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:13:17 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:13:24 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:13:50 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:13:52 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:13:54 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:13:57 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:14:26 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:15:29 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:17:34 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:19:56 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:22:44 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:22:59 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:26:06 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:28:15 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:29:22 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:30:21 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:44:35 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:46:39 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:49:50 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:52:03 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:53:18 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: fe08dc15a6462c475774171b79181991
+2025-09-01 22:53:18 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: fe08dc15a6462c475774171b79181991
+2025-09-01 22:53:18 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: fe08dc15a6462c475774171b79181991
+2025-09-01 22:53:18 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: fe08dc15a6462c475774171b79181991
+2025-09-01 22:53:19 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 22:57:42 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:59:28 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 22:59:49 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 0dfa828e38ca54d5b4c79079d5c51991
+2025-09-01 22:59:49 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 0dfa828e38ca54d5b4c79079d5c51991
+2025-09-01 22:59:50 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 0dfa828e38ca54d5b4c79079d5c51991
+2025-09-01 22:59:50 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 0dfa828e38ca54d5b4c79079d5c51991
+2025-09-01 22:59:50 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 23:01:59 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 23:02:15 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 23:02:28 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: cefac55f8a56411f93fe79e077981991
+2025-09-01 23:02:29 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: cefac55f8a56411f93fe79e077981991
+2025-09-01 23:02:29 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: cefac55f8a56411f93fe79e077981991
+2025-09-01 23:02:29 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: cefac55f8a56411f93fe79e077981991
+2025-09-01 23:02:29 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-01 23:06:28 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 23:07:16 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 23:07:18 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 23:07:23 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 23:10:42 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 23:14:06 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 23:14:11 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 23:22:50 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-01 23:23:48 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 69574876285afbe58761adb98eab1991
+2025-09-01 23:23:48 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 69574876285afbe58761adb98eab1991
+2025-09-01 23:23:48 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 69574876285afbe58761adb98eab1991
+2025-09-01 23:23:48 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 69574876285afbe58761adb98eab1991
+2025-09-01 23:23:49 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-02 02:15:15 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-02 02:39:45 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-02 02:42:40 | INFO     | voice_assistant.database | handle_passthru:1089 | ✍️ Passthru: Updating database for CallSid: 09f6fb88455803c85ec532fc3e7b1992
+2025-09-02 02:42:40 | INFO     | voice_assistant.database | handle_passthru:1099 | ✅ Passthru: Database updated successfully for CallSid: 09f6fb88455803c85ec532fc3e7b1992
+2025-09-02 02:42:41 | INFO     | voice_assistant.database | old_websocket_endpoint:1867 | Looking up customer data by CallSid: 09f6fb88455803c85ec532fc3e7b1992
+2025-09-02 02:42:41 | INFO     | voice_assistant.database | old_websocket_endpoint:1884 | Looking up call session in database by CallSid: 09f6fb88455803c85ec532fc3e7b1992
+2025-09-02 02:42:41 | INFO     | voice_assistant.database | old_websocket_endpoint:1901 | ✅ Found customer in database: Kushal
+2025-09-02 10:20:59 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-05 19:10:58 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-05 19:48:08 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-05 19:53:44 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-05 22:50:29 | INFO     | voice_assistant.database | lifespan:59 | Database connection established
+2025-09-05 23:45:23 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 00:00:41 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 00:30:17 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 00:37:09 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 01:13:59 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 01:14:36 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 01:15:25 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 01:15:47 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 02:26:08 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 02:34:40 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 02:35:03 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 02:38:11 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 02:39:22 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 02:41:06 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 02:46:06 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 02:48:30 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 03:04:49 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 03:29:05 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 03:29:53 | INFO     | voice_assistant.database | lifespan:245 | Database connection established
+2025-09-06 03:43:47 | INFO     | voice_assistant.database | lifespan:261 | Database connection established
+2025-09-06 03:45:08 | INFO     | voice_assistant.database | lifespan:261 | Database connection established
+2025-09-06 03:50:49 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 03:53:06 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 03:54:42 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 03:54:48 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 03:54:54 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 03:55:01 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 03:55:07 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 03:55:13 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 03:55:52 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 03:58:42 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 04:03:29 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 04:05:39 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 04:05:48 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 04:06:19 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 04:06:28 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 04:09:11 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 04:09:47 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 04:09:55 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 04:10:03 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 04:10:10 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 14:53:44 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 14:56:44 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 14:56:52 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 14:58:21 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 14:58:49 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 17:18:01 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 17:23:19 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 17:25:18 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 17:25:23 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 18:32:27 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 18:53:38 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 18:58:58 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:00:45 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:02:55 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:06:56 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:07:20 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:09:36 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:10:08 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:10:49 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:11:07 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:14:14 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:17:53 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:26:42 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:27:14 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:29:02 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:33:53 | INFO     | voice_assistant.database | old_websocket_endpoint:2116 | Looking up customer data by CallSid: 9cf04bbc7451e175e75c7920d2b11996
+2025-09-06 19:33:53 | INFO     | voice_assistant.database | old_websocket_endpoint:2133 | Looking up call session in database by CallSid: 9cf04bbc7451e175e75c7920d2b11996
+2025-09-06 19:33:53 | ERROR    | voice_assistant.database | old_websocket_endpoint:2158 | ❌ No customer data found - cannot proceed without real customer information
+2025-09-06 19:34:30 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:35:03 | INFO     | voice_assistant.database | old_websocket_endpoint:2116 | Looking up customer data by CallSid: ceae1ad331e32cefc2a7cda331d71996
+2025-09-06 19:35:03 | INFO     | voice_assistant.database | old_websocket_endpoint:2133 | Looking up call session in database by CallSid: ceae1ad331e32cefc2a7cda331d71996
+2025-09-06 19:35:03 | ERROR    | voice_assistant.database | old_websocket_endpoint:2158 | ❌ No customer data found - cannot proceed without real customer information
+2025-09-06 19:36:46 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:36:57 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:37:36 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:37:45 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:38:25 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:38:46 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:39:01 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:40:09 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:40:54 | INFO     | voice_assistant.database | old_websocket_endpoint:2120 | Looking up customer data by CallSid: 9a39351d58264b1521fab375b4101996
+2025-09-06 19:40:54 | INFO     | voice_assistant.database | old_websocket_endpoint:2137 | Looking up call session in database by CallSid: 9a39351d58264b1521fab375b4101996
+2025-09-06 19:40:54 | ERROR    | voice_assistant.database | old_websocket_endpoint:2162 | ❌ No customer data found - cannot proceed without real customer information
+2025-09-06 19:41:40 | INFO     | voice_assistant.database | old_websocket_endpoint:2120 | Looking up customer data by CallSid: 90943d65847a91c46e3748a0b3881996
+2025-09-06 19:41:40 | INFO     | voice_assistant.database | old_websocket_endpoint:2137 | Looking up call session in database by CallSid: 90943d65847a91c46e3748a0b3881996
+2025-09-06 19:41:40 | ERROR    | voice_assistant.database | old_websocket_endpoint:2162 | ❌ No customer data found - cannot proceed without real customer information
+2025-09-06 19:42:37 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:43:40 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:44:11 | INFO     | voice_assistant.database | old_websocket_endpoint:2120 | Looking up customer data by CallSid: 7fb3c34243b0209b0f50a05545911996
+2025-09-06 19:44:11 | INFO     | voice_assistant.database | old_websocket_endpoint:2137 | Looking up call session in database by CallSid: 7fb3c34243b0209b0f50a05545911996
+2025-09-06 19:44:11 | ERROR    | voice_assistant.database | old_websocket_endpoint:2158 | ❌ Error looking up customer in database: 'Customer' object has no attribute 'loan_id'
+2025-09-06 19:44:11 | ERROR    | voice_assistant.database | old_websocket_endpoint:2162 | ❌ No customer data found - cannot proceed without real customer information
+2025-09-06 19:46:03 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:46:08 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:46:18 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:46:25 | INFO     | voice_assistant.database | old_websocket_endpoint:2122 | Looking up customer data by CallSid: e2b66127e6118ea732bbdc873eb21996
+2025-09-06 19:46:25 | INFO     | voice_assistant.database | old_websocket_endpoint:2139 | Looking up call session in database by CallSid: e2b66127e6118ea732bbdc873eb21996
+2025-09-06 19:46:25 | INFO     | voice_assistant.database | old_websocket_endpoint:2158 | ✅ Found customer in database: Test Customer
+2025-09-06 19:47:50 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:48:04 | INFO     | voice_assistant.database | lifespan:268 | Database connection established
+2025-09-06 19:48:31 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 19:48:48 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 19:50:39 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 19:51:19 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 20:02:29 | INFO     | voice_assistant.database | old_websocket_endpoint:2122 | Looking up customer data by CallSid: 1ff3a4fe11c1b316a8f3f8872aa61996
+2025-09-06 20:02:29 | INFO     | voice_assistant.database | old_websocket_endpoint:2139 | Looking up call session in database by CallSid: 1ff3a4fe11c1b316a8f3f8872aa61996
+2025-09-06 20:02:29 | ERROR    | voice_assistant.database | old_websocket_endpoint:2166 | ❌ No customer data found - cannot proceed without real customer information
+2025-09-06 20:02:31 | INFO     | voice_assistant.database | old_websocket_endpoint:2122 | Looking up customer data by CallSid: 1a5f4a273e0df4c50088c76e610f1996
+2025-09-06 20:02:31 | INFO     | voice_assistant.database | old_websocket_endpoint:2139 | Looking up call session in database by CallSid: 1a5f4a273e0df4c50088c76e610f1996
+2025-09-06 20:02:31 | ERROR    | voice_assistant.database | old_websocket_endpoint:2166 | ❌ No customer data found - cannot proceed without real customer information
+2025-09-06 20:02:35 | INFO     | voice_assistant.database | old_websocket_endpoint:2122 | Looking up customer data by CallSid: a65386850b82b1744d762f3188371996
+2025-09-06 20:02:35 | INFO     | voice_assistant.database | old_websocket_endpoint:2139 | Looking up call session in database by CallSid: a65386850b82b1744d762f3188371996
+2025-09-06 20:02:35 | ERROR    | voice_assistant.database | old_websocket_endpoint:2166 | ❌ No customer data found - cannot proceed without real customer information
+2025-09-06 20:02:35 | INFO     | voice_assistant.database | old_websocket_endpoint:2122 | Looking up customer data by CallSid: 6f1866f267bc00298705f9957d4e1996
+2025-09-06 20:02:35 | INFO     | voice_assistant.database | old_websocket_endpoint:2139 | Looking up call session in database by CallSid: 6f1866f267bc00298705f9957d4e1996
+2025-09-06 20:02:35 | ERROR    | voice_assistant.database | old_websocket_endpoint:2166 | ❌ No customer data found - cannot proceed without real customer information
+2025-09-06 20:14:06 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 20:56:21 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:00:58 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:01:32 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:05:28 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:10:29 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:11:08 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:11:38 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:12:15 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:12:25 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:12:34 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:12:53 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:13:52 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:14:09 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:15:47 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-06 21:18:43 | INFO     | voice_assistant.database | lifespan:269 | Database connection established

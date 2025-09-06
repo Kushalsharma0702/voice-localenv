@@ -1,0 +1,215 @@
+2025-08-16 15:48:43 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1440 | WebSocket compatibility error: (<CloseCode.ABNORMAL_CLOSURE: 1006>, '')
+2025-08-16 15:58:03 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1472 | WebSocket compatibility error: (<CloseCode.ABNORMAL_CLOSURE: 1006>, '')
+2025-08-16 16:15:33 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:219 | Error streaming audio to WebSocket: 
+2025-08-16 16:15:33 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1472 | WebSocket compatibility error: WebSocket is not connected. Need to call "accept" first.
+2025-08-16 16:15:34 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1487 | Error closing WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-16 16:59:34 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:234 | Error streaming audio to WebSocket: 
+2025-08-16 16:59:41 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:234 | Error streaming audio to WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-16 16:59:41 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1547 | WebSocket compatibility error: WebSocket is not connected. Need to call "accept" first.
+2025-08-16 16:59:42 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1562 | Error closing WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-16 17:28:08 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1602 | WebSocket compatibility error: (<CloseCode.ABNORMAL_CLOSURE: 1006>, '')
+2025-08-16 17:57:49 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:234 | Error streaming audio to WebSocket: 
+2025-08-16 17:57:54 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:234 | Error streaming audio to WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-16 17:57:54 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1796 | WebSocket compatibility error: WebSocket is not connected. Need to call "accept" first.
+2025-08-16 17:57:55 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1811 | Error closing WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:28 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 27: 
+2025-08-16 18:20:28 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 28: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:28 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 29: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:28 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 30: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:28 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 31: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:28 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 32: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:28 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 33: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:28 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 34: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:28 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 35: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:28 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 36: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:29 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 37: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:29 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 38: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:29 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 39: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:32 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 1: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:32 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 2: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:32 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 3: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:33 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 4: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:33 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 5: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:33 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 6: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:33 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 7: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:33 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 8: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:33 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 9: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:33 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 10: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:33 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 11: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:33 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 12: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:33 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 13: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:34 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 14: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:34 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 15: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:34 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 16: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:34 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 17: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:34 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 18: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:34 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 19: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:34 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 20: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:34 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 21: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:34 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 22: Cannot call "send" once a close message has been sent.
+2025-08-16 18:20:36 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1828 | WebSocket compatibility error: WebSocket is not connected. Need to call "accept" first.
+2025-08-16 18:20:37 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1843 | Error closing WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-16 21:58:42 | ERROR    | voice_assistant.errors | lifespan:56 | ❌ Database initialization failed
+2025-08-16 21:58:49 | ERROR    | voice_assistant.errors | lifespan:56 | ❌ Database initialization failed
+2025-08-16 21:58:58 | ERROR    | voice_assistant.errors | lifespan:56 | ❌ Database initialization failed
+2025-08-16 21:59:02 | ERROR    | voice_assistant.errors | lifespan:56 | ❌ Database initialization failed
+2025-08-16 21:59:11 | ERROR    | voice_assistant.errors | lifespan:56 | ❌ Database initialization failed
+2025-08-16 21:59:15 | ERROR    | voice_assistant.errors | lifespan:56 | ❌ Database initialization failed
+2025-08-16 21:59:25 | ERROR    | voice_assistant.errors | lifespan:56 | ❌ Database initialization failed
+2025-08-16 21:59:44 | ERROR    | voice_assistant.errors | lifespan:56 | ❌ Database initialization failed
+2025-08-16 22:53:42 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:251 | ❌ Error sending chunk 16: 
+2025-08-16 22:53:44 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1828 | WebSocket compatibility error: WebSocket is not connected. Need to call "accept" first.
+2025-08-16 22:53:45 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1843 | Error closing WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-17 13:12:00 | ERROR    | voice_assistant.errors | stream_audio_to_websocket:219 | Error streaming audio to WebSocket: 
+2025-08-17 13:12:00 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1472 | WebSocket compatibility error: WebSocket is not connected. Need to call "accept" first.
+2025-08-17 13:12:01 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1487 | Error closing WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-17 14:43:06 | ERROR    | voice_assistant.errors | lifespan:56 | ❌ Database initialization failed
+2025-08-17 15:08:38 | ERROR    | voice_assistant.errors | lifespan:56 | ❌ Database initialization failed
+2025-08-18 03:41:22 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1641 | WebSocket compatibility error: (<CloseCode.ABNORMAL_CLOSURE: 1006>, '')
+2025-08-20 01:26:11 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1622 | WebSocket compatibility error: (<CloseCode.ABNORMAL_CLOSURE: 1006>, '')
+2025-08-20 01:50:19 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1640 | WebSocket compatibility error: WebSocket is not connected. Need to call "accept" first.
+2025-08-20 01:50:20 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1655 | Error closing WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-20 01:55:46 | ERROR    | voice_assistant.errors | lifespan:56 | ❌ Database initialization failed
+2025-08-20 23:35:04 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1661 | WebSocket compatibility error: WebSocket is not connected. Need to call "accept" first.
+2025-08-20 23:35:05 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1676 | Error closing WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-21 00:11:49 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1616 | WebSocket compatibility error: (<CloseCode.ABNORMAL_CLOSURE: 1006>, '')
+2025-08-21 00:55:08 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1656 | WebSocket compatibility error: WebSocket is not connected. Need to call "accept" first.
+2025-08-21 00:55:09 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1671 | Error closing WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-21 01:08:12 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1665 | WebSocket compatibility error: WebSocket is not connected. Need to call "accept" first.
+2025-08-21 01:08:13 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1680 | Error closing WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-21 02:08:06 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1665 | WebSocket compatibility error: WebSocket is not connected. Need to call "accept" first.
+2025-08-21 02:08:07 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1680 | Error closing WebSocket: Cannot call "send" once a close message has been sent.
+2025-08-21 02:15:18 | ERROR    | voice_assistant.errors | old_websocket_endpoint:1651 | WebSocket compatibility error: (<CloseCode.ABNORMAL_CLOSURE: 1006>, '')
+2025-09-06 19:46:15 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e2b66127e6118ea732bbdc873eb21996. HTTP 404
+2025-09-06 19:51:31 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:51:42 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:51:52 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:52:03 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:52:03 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:52:13 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:52:13 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:52:24 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:52:24 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:52:34 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:52:34 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:52:45 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:52:45 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:52:55 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:52:55 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:53:06 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:53:06 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:53:16 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:53:16 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:53:27 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:53:27 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:53:37 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:53:37 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:53:48 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:53:48 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:53:58 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:53:58 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:54:09 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:54:09 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:54:19 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:54:19 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:54:30 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:54:30 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:54:40 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:54:40 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:54:50 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:54:50 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for ebd804e7b234207026da73df06cd1996. HTTP 404
+2025-09-06 19:55:01 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:55:11 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:55:22 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for f3b42e350a7b8b57b6e7deba20601996. HTTP 404
+2025-09-06 19:59:30 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 19:59:41 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 19:59:51 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:00:01 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:00:12 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:00:22 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:00:33 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:00:43 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:00:54 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:01:04 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:01:15 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:01:25 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:01:35 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:01:46 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:01:56 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:02:07 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:02:17 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:02:28 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:02:38 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 20:02:49 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1925 | ⚠️ [POLL] Failed to fetch status for e5755b754d8af91f52c59d805e4e1996. HTTP 404
+2025-09-06 21:01:59 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:02:09 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:02:19 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:02:30 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:02:40 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:02:50 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:03:01 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:03:11 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:03:22 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:03:32 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:03:42 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:03:53 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:04:03 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:04:14 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:04:24 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:04:34 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:04:45 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:04:55 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:05:05 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for 8fbff72f5ff2cc2b484b0da4b16c1996. HTTP 404
+2025-09-06 21:05:37 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:05:48 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:05:58 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:06:08 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:06:19 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:06:29 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:06:39 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:06:50 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:07:00 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:07:11 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:07:21 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:07:32 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:07:42 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:07:52 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:08:03 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:08:13 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:08:23 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:08:34 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:08:44 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:08:54 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1990 | ⚠️ [POLL] Failed to fetch status for ec16d8bc351cb264b49269dc5e021996. HTTP 404
+2025-09-06 21:14:22 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+2025-09-06 21:14:32 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+2025-09-06 21:14:43 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+2025-09-06 21:14:53 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+2025-09-06 21:15:03 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+2025-09-06 21:15:13 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+2025-09-06 21:15:24 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+2025-09-06 21:15:34 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+2025-09-06 21:15:59 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:16:09 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:16:19 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:16:30 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:16:40 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:16:50 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:17:01 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:17:05 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 31e032af40c5f966da2013f7118b1996. HTTP 404
+2025-09-06 21:17:11 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:17:16 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 31e032af40c5f966da2013f7118b1996. HTTP 404
+2025-09-06 21:17:21 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:17:26 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 31e032af40c5f966da2013f7118b1996. HTTP 404
+2025-09-06 21:17:32 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:17:36 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 31e032af40c5f966da2013f7118b1996. HTTP 404
+2025-09-06 21:17:42 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:17:47 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 31e032af40c5f966da2013f7118b1996. HTTP 404
+2025-09-06 21:17:52 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:17:57 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 31e032af40c5f966da2013f7118b1996. HTTP 404
+2025-09-06 21:18:03 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:18:07 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 31e032af40c5f966da2013f7118b1996. HTTP 404
+2025-09-06 21:18:13 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:18:18 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 31e032af40c5f966da2013f7118b1996. HTTP 404
+2025-09-06 21:18:24 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-06 21:18:28 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 31e032af40c5f966da2013f7118b1996. HTTP 404
+2025-09-06 21:18:34 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404

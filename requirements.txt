@@ -1,0 +1,105 @@
+# =============================================================================
+# VOICE ASSISTANT CALL MANAGEMENT SYSTEM - REQUIREMENTS
+# =============================================================================
+
+# Core Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+starlette>=0.27.0
+pydantic>=2.0.0
+
+# Web Server Components
+jinja2>=3.1.0
+python-multipart>=0.0.6
+aiofiles>=23.0.0
+
+# Database & ORM
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+alembic>=1.12.0
+
+# Redis & Session Management  
+redis>=4.5.0
+aioredis>=2.0.0
+
+# HTTP Clients
+httpx>=0.25.0
+requests>=2.31.0
+
+# Data Processing & File Handling
+pandas>=2.0.0
+openpyxl>=3.1.0
+xlrd>=2.0.0
+openpyxl>=3.1.0
+xlsxwriter>=3.1.0
+
+# Audio Processing
+pydub>=0.25.0
+soundfile>=0.12.0
+sounddevice>=0.4.6
+pyaudio>=0.2.11
+playsound>=1.3.0
+SpeechRecognition>=3.10.0
+
+# AI/ML Services
+sarvamai>=0.1.0
+boto3>=1.29.0
+botocore>=1.32.0
+
+# Authentication & Security
+PyJWT>=2.8.0
+cryptography>=41.0.0
+
+# Environment & Configuration
+python-dotenv>=1.0.0
+
+# WebSocket Support
+websockets>=11.0.0
+
+# Background Tasks & Task Management
+celery[redis]>=5.3.0
+
+# System Monitoring & Utilities
+psutil>=5.9.0
+
+# Production Deployment
+gunicorn>=21.2.0
+
+# Development & Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# AWS SDK Extensions
+aiobotocore>=2.7.0
+
+# Additional Core Python Libraries (if needed in virtual environments)
+# These are usually included with Python but listed for completeness
+python-dateutil>=2.8.0
+
+# =============================================================================
+# DEPLOYMENT NOTES:
+# 
+# CORE FEATURES:
+# - FastAPI web framework with async WebSocket support
+# - PostgreSQL database with SQLAlchemy 2.0+ ORM
+# - Redis for session management and caching
+# - AWS Cognito authentication with JWT tokens
+# - Real-time voice processing with Sarvam AI
+# - Audio streaming and processing capabilities
+# 
+# PRODUCTION REQUIREMENTS:
+# - All packages are production-tested
+# - Versions specified for stability
+# - Includes monitoring and logging utilities
+# - Redis session management for scalability
+# - AWS services integration (Cognito, Bedrock)
+# 
+# INSTALLATION:
+# pip install -r requirements.txt
+# 
+# OPTIONAL AUDIO DEPENDENCIES:
+# For full audio functionality, you may also need system-level packages:
+# - Ubuntu/Debian: apt-get install portaudio19-dev python3-pyaudio
+# - CentOS/RHEL: yum install portaudio-devel
+# - macOS: brew install portaudio
+# ============================================================================= 

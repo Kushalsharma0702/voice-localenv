@@ -1,0 +1,129 @@
+nohup: ignoring input
+21:14:08 | [32mINFO[0m | voice_assistant | Starting server directly from main.py
+INFO:     Will watch for changes in these directories: ['/home/cyberdude/Documents/Projects/voice-local']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1348127] using WatchFiles
+INFO:     Started server process [1348169]
+INFO:     Waiting for application startup.
+21:14:09 | [32mINFO[0m | voice_assistant | 🎉 Logging system initialized
+21:14:09 | [32mINFO[0m | voice_assistant | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+21:14:09 | [32mINFO[0m | voice_assistant | 🚀 Starting Voice Assistant Application...
+21:14:09 | [32mINFO[0m | voice_assistant | ✅ Database initialized successfully
+21:14:09 | [32mINFO[0m | voice_assistant.database | Database connection established
+21:14:09 | [32mINFO[0m | voice_assistant.database | Database connection established
+✅ Redis connection successful
+21:14:09 | [32mINFO[0m | voice_assistant | ✅ Redis initialized successfully
+21:14:09 | [32mINFO[0m | voice_assistant | 🎉 Application startup complete!
+INFO:     Application startup complete.
+INFO:     127.0.0.1:46696 - "WebSocket /ws/dashboard/enhanced" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:46700 - "WebSocket /ws/dashboard/enhanced" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:46716 - "WebSocket /ws/dashboard/enhanced" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:46732 - "WebSocket /ws/dashboard/enhanced" [accepted]
+INFO:     connection open
+Dashboard connected: enhanced
+Dashboard connected: enhanced
+Dashboard connected: enhanced
+Dashboard connected: enhanced
+🚀 [CHECKPOINT] /api/trigger-single-call endpoint hit
+🚀 [CHECKPOINT] Customer ID: 7321a04f-508f-456a-99d4-c4eedec02a2a
+✅ [CHECKPOINT] Found customer: Test Customer (+917417119014)
+[CallService] Stored customer data in Redis: temp_call_id=temp_call_05cb4ce85c18, phone_key=customer_phone_917417119014
+📞 [CHECKPOINT] About to trigger Exotel call for temp_call_id: temp_call_05cb4ce85c18
+🎯 [CHECKPOINT] Starting Exotel call trigger process
+🎯 [CHECKPOINT] Target number: +917417119014
+🎯 [CHECKPOINT] Temp call ID: temp_call_05cb4ce85c18
+🎯 [CHECKPOINT] API URL: https://api.exotel.com/v1/Accounts/aurocode1/Calls/connect.json
+🎯 [CHECKPOINT] Flow URL: http://my.exotel.com/aurocode1/exoml/start_voice/1027293
+🎯 [CHECKPOINT] Payload validation:
+   • From (Customer): +917417119014
+   • CallerId (ExoPhone): +914446972509
+   • Flow URL: http://my.exotel.com/aurocode1/exoml/start_voice/1027293
+   • CustomField: id=7321a04f-508f-456a-99d4-c4eedec02a2a|name=Test Customer|phone_number=+917417119014|state=Maharash...
+📞 [CHECKPOINT] Triggering Exotel call to customer +917417119014
+📦 [CHECKPOINT] CustomField Payload: id=7321a04f-508f-456a-99d4-c4eedec02a2a|name=Test Customer|phone_number=+917417119014|state=Maharashtra|loan_id=LN123456|amount=50000.0|due_date=2025-09-15|language_code=en-IN|temp_call_id=temp_call_05cb4ce85c18
+🔧 [CHECKPOINT] Debug - API URL: https://api.exotel.com/v1/Accounts/aurocode1/Calls/connect.json
+🔧 [CHECKPOINT] Debug - Auth: dbe31dfc1d...42fc153a0b / bbe529a13a...87fed34380
+🔧 [CHECKPOINT] Debug - Full Payload: {
+  "From": "+917417119014",
+  "CallerId": "+914446972509",
+  "Url": "http://my.exotel.com/aurocode1/exoml/start_voice/1027293",
+  "CallType": "trans",
+  "TimeLimit": "3600",
+  "TimeOut": "30",
+  "CustomField": "id=7321a04f-508f-456a-99d4-c4eedec02a2a|name=Test Customer|phone_number=+917417119014|state=Maharashtra|loan_id=LN123456|amount=50000.0|due_date=2025-09-15|language_code=en-IN|temp_call_id=temp_call_05cb4ce85c18",
+  "StatusCallback": "https://9bf6ff2721e1.ngrok-free.app/exotel-webhook"
+}
+🎯 [CHECKPOINT] Making HTTP request to Exotel API...
+🎯 [CHECKPOINT] Exotel API response received
+🎯 [CHECKPOINT] Status Code: 200
+🎯 [CHECKPOINT] Response Text: {"Call":{"Sid":"398cbd1fa740b6e4fcdcd052dc131996","ParentCallSid":null,"DateCreated":"2025-09-06 21:14:21","DateUpdated":"2025-09-06 21:14:21","AccountSid":"aurocode1","To":"04446972509","From":"07417119014","PhoneNumberSid":"04446972509","Status":"in-progress","StartTime":"2025-09-06 21:14:21","EndTime":null,"Duration":null,"Price":null,"Direction":"outbound-api","AnsweredBy":null,"ForwardedFrom":null,"CallerName":null,"Uri":"\/v1\/Accounts\/aurocode1\/Calls\/398cbd1fa740b6e4fcdcd052dc131996.js...
+✅ [CHECKPOINT] Exotel call triggered successfully. CallSid: 398cbd1fa740b6e4fcdcd052dc131996
+✅ [CHECKPOINT] Full response: {
+  "Call": {
+    "Sid": "398cbd1fa740b6e4fcdcd052dc131996",
+    "ParentCallSid": null,
+    "DateCreated": "2025-09-06 21:14:21",
+    "DateUpdated": "2025-09-06 21:14:21",
+    "AccountSid": "aurocode1",
+    "To": "04446972509",
+    "From": "07417119014",
+    "PhoneNumberSid": "04446972509",
+    "Status": "in-progress",
+    "StartTime": "2025-09-06 21:14:21",
+    "EndTime": null,
+    "Duration": null,
+    "Price": null,
+    "Direction": "outbound-api",
+    "AnsweredBy": null,
+    "ForwardedFrom": null,
+    "CallerName": null,
+    "Uri": "/v1/Accounts/aurocode1/Calls/398cbd1fa740b6e4fcdcd052dc131996.json",
+    "RecordingUrl": null
+  }
+}
+✅ [CHECKPOINT] Exotel call triggered successfully for temp_call_id: temp_call_05cb4ce85c18
+✅ Updated call 398cbd1fa740b6e4fcdcd052dc131996 status to: call_in_progress
+🚀 [CHECKPOINT] Call service result: {'success': True, 'call_sid': '398cbd1fa740b6e4fcdcd052dc131996', 'customer': {'id': '7321a04f-508f-456a-99d4-c4eedec02a2a', 'name': 'Test Customer', 'phone_number': '+917417119014', 'state': 'Maharashtra', 'loan_id': 'LN123456', 'amount': 50000.0, 'due_date': '2025-09-15', 'language_code': 'en-IN', 'temp_call_id': 'temp_call_05cb4ce85c18'}, 'status': 'call_in_progress'}
+🚀 [CHECKPOINT] Polling started for CallSid: 398cbd1fa740b6e4fcdcd052dc131996
+21:14:22 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:14:22 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+👥 [CHECKPOINT] /api/customers endpoint hit
+👥 [CHECKPOINT] Found 11 customers in database
+👥 [CHECKPOINT] Returning customer list successfully
+21:14:32 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:14:32 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:14:43 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:14:43 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:14:53 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:14:53 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+📩 Webhook received: {'CallSid': '398cbd1fa740b6e4fcdcd052dc131996', 'Status': 'no-answer', 'DateUpdated': '2025-09-06 21:14:54'}
+📩 Raw Exotel Status: None
+✅ Found call session for CallSid=398cbd1fa740b6e4fcdcd052dc131996
+✅ Updated call 398cbd1fa740b6e4fcdcd052dc131996 status to: call_failed
+✅ Found customer for call: Test Customer (+917417119014)
+✅ CallSid=398cbd1fa740b6e4fcdcd052dc131996 updated → call_failed
+21:15:03 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:15:03 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:15:13 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:15:13 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:15:24 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:15:24 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:15:34 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+21:15:34 | [31mERROR[0m | voice_assistant.errors | ⚠️ [POLL] Failed to fetch status for 398cbd1fa740b6e4fcdcd052dc131996. HTTP 404
+INFO:     Shutting down
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     Waiting for application shutdown.
+Dashboard disconnected: enhanced
+Dashboard disconnected: enhanced
+Dashboard disconnected: enhanced
+Dashboard disconnected: enhanced
+21:15:41 | [32mINFO[0m | voice_assistant | 🛑 Shutting down Voice Assistant Application...
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1348169]
+INFO:     Stopping reloader process [1348127]
