@@ -213,3 +213,7 @@
 2025-09-06 21:18:24 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
 2025-09-06 21:18:28 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 31e032af40c5f966da2013f7118b1996. HTTP 404
 2025-09-06 21:18:34 | ERROR    | voice_assistant.errors | poll_exotel_call_status:1999 | ⚠️ [POLL] Failed to fetch status for 09316ca6100e0ce9038cfa0033311996. HTTP 404
+2025-09-07 18:12:14 | ERROR    | voice_assistant.errors | lifespan:271 | ❌ Database initialization failed
+2025-09-07 18:12:40 | ERROR    | voice_assistant.errors | lifespan:271 | ❌ Database initialization failed
+2025-09-07 18:17:34 | ERROR    | voice_assistant.errors | lifespan:271 | ❌ Database initialization failed
+2025-09-07 18:31:46 | ERROR    | voice_assistant.errors | lifespan:271 | ❌ Database initialization failed

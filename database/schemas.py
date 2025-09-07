@@ -29,7 +29,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Database configuration
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:IntalksAI07@db-voice-agent.cviea4aicss0.ap-south-1.rds.amazonaws.com:5432/db-voice-agent")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:Intalksai07@dummy-db.cv8igmo4w3fe.eu-north-1.rds.amazonaws.com:5432/postgres")
 
 # Create SQLAlchemy components
 engine = create_engine(DATABASE_URL, echo=False)

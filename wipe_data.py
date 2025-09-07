@@ -74,7 +74,7 @@ def show_current_data_status():
     print("-" * 40)
     
     try:
-        DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://postgres:Kushal07@localhost/voice_db')
+        DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://postgres:Intalksai07@dummy-db.cviea4aicss0.eu-north-1.rds.amazonaws.com:5432/postgres')
         engine = create_engine(DATABASE_URL, echo=False)
         Session = sessionmaker(bind=engine)
         session = Session()

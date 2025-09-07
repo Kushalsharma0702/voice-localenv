@@ -752,3 +752,7 @@
 2025-09-06 21:14:09 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
 2025-09-06 21:15:47 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
 2025-09-06 21:18:43 | INFO     | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-07 18:12:14 | ERROR    | voice_assistant.database | lifespan:272 | Failed to establish database connection
+2025-09-07 18:12:40 | ERROR    | voice_assistant.database | lifespan:272 | Failed to establish database connection
+2025-09-07 18:17:34 | ERROR    | voice_assistant.database | lifespan:272 | Failed to establish database connection
+2025-09-07 18:31:46 | ERROR    | voice_assistant.database | lifespan:272 | Failed to establish database connection

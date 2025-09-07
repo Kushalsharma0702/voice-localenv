@@ -8750,3 +8750,38 @@ CONTEXT:  JSON data, line 1: ... "8/25/25", "state": "Tamil Nadu", "Cluster": Na
 2025-09-06 21:18:43 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
 2025-09-06 21:18:43 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
 2025-09-06 21:18:43 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-07 18:12:13 | INFO     | voice_assistant | <module>:2646 | Starting server directly from main.py
+2025-09-07 18:12:14 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-07 18:12:14 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-07 18:12:14 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-07 18:12:14 | [31mERROR[0m | voice_assistant.errors | lifespan:271 | ❌ Database initialization failed
+2025-09-07 18:12:14 | [31mERROR[0m | voice_assistant.database | lifespan:272 | Failed to establish database connection
+2025-09-07 18:12:14 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-07 18:12:14 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-07 18:12:20 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-07 18:12:38 | INFO     | voice_assistant | <module>:2646 | Starting server directly from main.py
+2025-09-07 18:12:40 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-07 18:12:40 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-07 18:12:40 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-07 18:12:40 | [31mERROR[0m | voice_assistant.errors | lifespan:271 | ❌ Database initialization failed
+2025-09-07 18:12:40 | [31mERROR[0m | voice_assistant.database | lifespan:272 | Failed to establish database connection
+2025-09-07 18:12:40 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-07 18:12:40 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-07 18:17:21 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-07 18:17:33 | INFO     | voice_assistant | <module>:2646 | Starting server directly from main.py
+2025-09-07 18:17:34 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-07 18:17:34 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-07 18:17:34 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-07 18:17:34 | [31mERROR[0m | voice_assistant.errors | lifespan:271 | ❌ Database initialization failed
+2025-09-07 18:17:34 | [31mERROR[0m | voice_assistant.database | lifespan:272 | Failed to establish database connection
+2025-09-07 18:17:34 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-07 18:17:34 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-07 18:17:37 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-07 18:31:44 | INFO     | voice_assistant | <module>:2646 | Starting server directly from main.py
+2025-09-07 18:31:45 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-07 18:31:45 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-07 18:31:45 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-07 18:31:46 | [31mERROR[0m | voice_assistant.errors | lifespan:271 | ❌ Database initialization failed
+2025-09-07 18:31:46 | [31mERROR[0m | voice_assistant.database | lifespan:272 | Failed to establish database connection
+2025-09-07 18:31:46 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-07 18:31:46 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
