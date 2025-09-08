@@ -8785,3 +8785,11 @@ CONTEXT:  JSON data, line 1: ... "8/25/25", "state": "Tamil Nadu", "Cluster": Na
 2025-09-07 18:31:46 | [31mERROR[0m | voice_assistant.database | lifespan:272 | Failed to establish database connection
 2025-09-07 18:31:46 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
 2025-09-07 18:31:46 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-08 02:32:27 | INFO     | voice_assistant | <module>:2646 | Starting server directly from main.py
+2025-09-08 02:32:28 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-08 02:32:28 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-08 02:32:28 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-08 02:32:40 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-08 02:32:40 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-08 02:32:40 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-08 02:32:40 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
