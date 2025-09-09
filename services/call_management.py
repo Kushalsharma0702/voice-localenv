@@ -73,6 +73,8 @@ class CallManagementService:
                             if hasattr(existing_customer, key) and value:
                                 setattr(existing_customer, key, value)
                         existing_customer.updated_at = datetime.utcnow()
+                        # Update first_uploaded_at to reflect the latest upload date
+                        existing_customer.first_uploaded_at = datetime.utcnow()
                         customer = existing_customer
                     else:
                         # Create new customer

@@ -1478,20 +1478,50 @@ async def upload_customers(file: UploadFile = File(...)):
         return {"success": False, "error": str(e)}
 
 @app.get("/api/uploaded-files")
-async def get_uploaded_files():
+async def get_uploaded_files(
+    page: int = 1, 
+    page_size: int = 25, 
+    date_filter: str = None
+):
     """
-    Retrieves all uploaded file records with their processing details.
+    Retrieves uploaded file records with pagination and filtering.
+    
+    Args:
+        page: Page number (1-based)
+        page_size: Number of records per page (25, 50, or 100)
+        date_filter: Filter by date - 'today', 'week', 'month', or None for all
     """
-    print(f"📄 [CHECKPOINT] /api/uploaded-files endpoint hit")
+    print(f"📄 [CHECKPOINT] /api/uploaded-files endpoint hit - page: {page}, page_size: {page_size}, filter: {date_filter}")
     
     try:
         from database.schemas import get_session, FileUpload
-        from sqlalchemy import desc
+        from sqlalchemy import desc, and_
+        from datetime import datetime, timedelta
         
         session = get_session()
         try:
-            # Get all file uploads ordered by upload date (newest first)
-            file_uploads = session.query(FileUpload).order_by(desc(FileUpload.uploaded_at)).all()
+            # Build base query
+            query = session.query(FileUpload).order_by(desc(FileUpload.uploaded_at))
+            
+            # Apply date filtering if specified
+            if date_filter:
+                now = datetime.now()
+                if date_filter == 'today':
+                    start_date = now.replace(hour=0, minute=0, second=0, microsecond=0)
+                    query = query.filter(FileUpload.uploaded_at >= start_date)
+                elif date_filter == 'week':
+                    start_date = now - timedelta(days=7)
+                    query = query.filter(FileUpload.uploaded_at >= start_date)
+                elif date_filter == 'month':
+                    start_date = now - timedelta(days=30)
+                    query = query.filter(FileUpload.uploaded_at >= start_date)
+            
+            # Get total count for pagination
+            total_count = query.count()
+            
+            # Apply pagination
+            offset = (page - 1) * page_size
+            file_uploads = query.offset(offset).limit(page_size).all()
             
             # Convert to list of dictionaries with detailed information
             upload_data = []
@@ -1518,11 +1548,23 @@ async def get_uploaded_files():
                 }
                 upload_data.append(upload_info)
             
-            print(f"📄 [CHECKPOINT] Found {len(upload_data)} uploaded files")
+            # Calculate pagination info
+            total_pages = (total_count + page_size - 1) // page_size  # Ceiling division
+            has_next = page < total_pages
+            has_prev = page > 1
+            
+            print(f"📄 [CHECKPOINT] Found {len(upload_data)} uploaded files on page {page}/{total_pages} (total: {total_count})")
             return {
                 'success': True,
                 'uploads': upload_data,
-                'total_count': len(upload_data)
+                'pagination': {
+                    'current_page': page,
+                    'page_size': page_size,
+                    'total_count': total_count,
+                    'total_pages': total_pages,
+                    'has_next': has_next,
+                    'has_prev': has_prev
+                }
             }
             
         finally:
@@ -1530,7 +1572,57 @@ async def get_uploaded_files():
             
     except Exception as e:
         print(f"❌ [CHECKPOINT] Exception in get_uploaded_files endpoint: {e}")
-        return {"success": False, "error": str(e), "uploads": []}
+        return {"success": False, "error": str(e), "uploads": [], "pagination": {"current_page": 1, "page_size": 25, "total_count": 0, "total_pages": 0, "has_next": False, "has_prev": False}}
+
+@app.get("/api/uploaded-files/ids")
+async def get_uploaded_file_ids(date_filter: str = None):
+    """
+    Retrieves all uploaded file IDs for select all functionality with filtering.
+    
+    Args:
+        date_filter: Filter by date - 'today', 'week', 'month', or None for all
+    """
+    print(f"📄 [CHECKPOINT] /api/uploaded-files/ids endpoint hit - filter: {date_filter}")
+    
+    try:
+        from database.schemas import get_session, FileUpload
+        from sqlalchemy import desc
+        from datetime import datetime, timedelta
+        
+        session = get_session()
+        try:
+            # Build base query
+            query = session.query(FileUpload.id).order_by(desc(FileUpload.uploaded_at))
+            
+            # Apply date filtering if specified
+            if date_filter:
+                now = datetime.now()
+                if date_filter == 'today':
+                    start_date = now.replace(hour=0, minute=0, second=0, microsecond=0)
+                    query = query.filter(FileUpload.uploaded_at >= start_date)
+                elif date_filter == 'week':
+                    start_date = now - timedelta(days=7)
+                    query = query.filter(FileUpload.uploaded_at >= start_date)
+                elif date_filter == 'month':
+                    start_date = now - timedelta(days=30)
+                    query = query.filter(FileUpload.uploaded_at >= start_date)
+            
+            # Get all IDs
+            upload_ids = [str(upload.id) for upload in query.all()]
+            
+            print(f"📄 [CHECKPOINT] Found {len(upload_ids)} upload IDs with filter: {date_filter}")
+            return {
+                'success': True,
+                'upload_ids': upload_ids,
+                'total_count': len(upload_ids)
+            }
+            
+        finally:
+            session.close()
+            
+    except Exception as e:
+        print(f"❌ [CHECKPOINT] Exception in get_uploaded_file_ids endpoint: {e}")
+        return {"success": False, "error": str(e), "upload_ids": []}
 
 @app.get("/api/uploaded-files/{upload_id}/details")
 async def get_upload_details(upload_id: str):

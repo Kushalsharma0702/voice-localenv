@@ -1,1390 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Assistant Call Management Dashboard</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        .container {
-            max-width: 1800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            border: 1px solid #e3e8ee;
-        }
-
-        .card h3 {
-            margin-bottom: 20px;
-            color: #2c3e50;
-            font-size: 1.3em;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* Enhanced Filter Section */
-        .filter-section {
-            background: #f8f9fa;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #e9ecef;
-        }
-
-        .filter-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-
-        .filter-group {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .filter-label {
-            font-weight: 600;
-            color: #495057;
-            font-size: 0.9em;
-        }
-
-        .filter-input, .filter-select {
-            padding: 10px 12px;
-            border: 1px solid #ced4da;
-            border-radius: 6px;
-            font-size: 14px;
-            background: white;
-            transition: border-color 0.3s ease;
-        }
-
-        .filter-input:focus, .filter-select:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-
-        /* Customer display controls styling */
-        #customerDisplayLimit {
-            cursor: pointer !important;
-            transition: all 0.2s ease !important;
-        }
-
-        #customerDisplayLimit:hover {
-            border-color: #0056b3 !important;
-            background-color: #f8f9fa !important;
-        }
-
-        #customerDisplayLimit:focus {
-            border-color: #007bff !important;
-            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25) !important;
-        }
-
-        #selectedCustomersInfo {
-            animation: pulse 0.3s ease when updated;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-
-        /* Pagination dropdown specific styles */
-
-        /* Serial number column styling */
-        .csv-table th:nth-child(2),
-        .csv-table td:nth-child(2) {
-            text-align: center;
-            font-weight: 600;
-            background-color: #f8f9fa;
-            border-right: 2px solid #dee2e6;
-        }
-
-        .csv-table th:nth-child(2) {
-            background-color: #e9ecef;
-            color: #495057;
-        }
-
-        /* CSV Data Table Styles */
-        .csv-data-container {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid #e3e8ee;
-        }
-
-        .csv-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13px;
-        }
-
-        .csv-table th {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 12px 8px;
-            text-align: left;
-            font-weight: 600;
-            border-bottom: 2px solid #5a67d8;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        .csv-table td {
-            padding: 10px 8px;
-            border-bottom: 1px solid #e2e8f0;
-            vertical-align: top;
-        }
-
-        .csv-table tr:hover {
-            background-color: #f8f9fa;
-        }
-
-        .csv-table tr:nth-child(even) {
-            background-color: #fafbfc;
-        }
-
-        /* Status Badge Styles */
-        .status-badge {
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .status-ready { background: #d4edda; color: #155724; }
-        .status-calling { background: #fff3cd; color: #856404; }
-        .status-in-progress { background: #cce5ff; color: #004085; }
-        .status-completed { background: #d1ecf1; color: #0c5460; }
-        .status-failed { background: #f8d7da; color: #721c24; }
-        .status-agent-transfer { background: #e2e3e5; color: #383d41; }
-
-        /* Upload Date Badge */
-        .upload-date-badge {
-            padding: 3px 6px;
-            border-radius: 8px;
-            font-size: 10px;
-            font-weight: 500;
-        }
-
-        .date-today { background: #e8f5e8; color: #2e7d32; }
-        .date-yesterday { background: #fff8e1; color: #f57f17; }
-        .date-week { background: #e3f2fd; color: #1565c0; }
-        .date-older { background: #fce4ec; color: #c2185b; }
-        .date-future { background: #f3e5f5; color: #7b1fa2; }
-
-        /* Action Buttons */
-        .action-btn {
-            padding: 6px 12px;
-            border: none;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 500;
-            cursor: pointer;
-            margin: 2px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-call {
-            background: #28a745;
-            color: white;
-        }
-
-        .btn-call:hover {
-            background: #218838;
-        }
-
-        .btn-status {
-            background: #17a2b8;
-            color: white;
-        }
-
-        .btn-status:hover {
-            background: #138496;
-        }
-
-        .btn-details {
-            background: #6c757d;
-            color: white;
-        }
-
-        .btn-details:hover {
-            background: #5a6268;
-        }
-
-        /* Bulk Actions */
-        .bulk-actions {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            margin: 15px 0;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
-
-        .bulk-btn {
-            padding: 8px 16px;
-            border: none;
-            border-radius: 6px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .bulk-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-
-        .bulk-btn-primary {
-            background: #007bff;
-            color: white;
-        }
-
-        .bulk-btn-success {
-            background: #28a745;
-            color: white;
-        }
-
-        .bulk-btn-warning {
-            background: #ffc107;
-            color: #212529;
-        }
-
-        /* Statistics Grid */
-        .statistics-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        .stat-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .stat-number {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 5px;
-        }
-
-        .stat-label {
-            color: #666;
-            font-size: 0.9em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Upload Section */
-        .upload-section {
-            border: 2px dashed #ccc;
-            border-radius: 8px;
-            padding: 30px;
-            text-align: center;
-            transition: all 0.3s ease;
-            margin-bottom: 20px;
-        }
-
-        .upload-section.dragover {
-            border-color: #667eea;
-            background-color: #f0f4ff;
-        }
-
-        .upload-button {
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 500;
-            margin-top: 10px;
-        }
-
-        /* Connection Status */
-        .connection-status {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 10px 15px;
-            border-radius: 20px;
-            font-weight: 600;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        .connection-status.connected {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .connection-status.disconnected {
-            background: #f8d7da;
-            color: #721c24;
-        }
-
-        .connection-status.connecting {
-            background: #fff3cd;
-            color: #856404;
-        }
-
-        /* Customer Details Modal */
-        .customer-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal-content {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            max-width: 800px;
-            max-height: 80vh;
-            overflow-y: auto;
-            position: relative;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 24px;
-            cursor: pointer;
-            color: #666;
-        }
-
-        /* Table Container with Scroll */
-        .table-container {
-            overflow-x: auto;
-            border-radius: 8px;
-            border: 1px solid #e3e8ee;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            
-            .filter-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .statistics-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .bulk-actions {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .csv-table {
-                font-size: 11px;
-            }
-            
-            .csv-table th, .csv-table td {
-                padding: 6px 4px;
-            }
-        }
-
-        /* Loading Animation */
-        .loading {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid #667eea;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Progress Bar */
-        .progress-container {
-            background: #f0f0f0;
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 10px 0;
-        }
-
-        .progress-bar {
-            height: 8px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            transition: width 0.3s ease;
-        }
-
-        /* Toast Notifications */
-        .toast {
-            position: fixed;
-            top: 80px;
-            right: 20px;
-            padding: 15px 20px;
-            border-radius: 8px;
-            color: white;
-            font-weight: 500;
-            z-index: 1001;
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-            max-width: 350px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-
-        .toast.show {
-            transform: translateX(0);
-        }
-
-        .toast.success {
-            background: #28a745;
-        }
-
-        .toast.error {
-            background: #dc3545;
-        }
-
-        .toast.info {
-            background: #17a2b8;
-        }
-
-        .toast.warning {
-            background: #ffc107;
-            color: #212529;
-        }
-
-        /* Batch Details Section */
-        .batch-details-container {
-            margin-top: 20px;
-        }
-
-        .batch-stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-
-        .batch-stat-card {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            border-left: 4px solid #667eea;
-        }
-
-        .batch-stat-number {
-            font-size: 2em;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        .batch-stat-label {
-            font-size: 0.9em;
-            color: #666;
-            font-weight: 500;
-        }
-
-        .batch-table-container {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        .batch-table-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            background: #f8f9fa;
-            border-bottom: 1px solid #e9ecef;
-        }
-
-        .batch-table-header h4 {
-            margin: 0;
-            color: #333;
-        }
-
-        .batch-controls {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .batch-btn {
-            padding: 6px 12px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .batch-btn:hover {
-            background: #0056b3;
-        }
-
-        .batch-btn:disabled {
-            background: #6c757d;
-            cursor: not-allowed;
-        }
-
-        .batch-pagination {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            background: #f8f9fa;
-            border-top: 1px solid #e9ecef;
-        }
-
-        .batch-pagination-info {
-            color: #666;
-            font-size: 14px;
-        }
-
-        .batch-pagination-controls {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        /* Call Status Tracking Styles */
-        .call-status-container {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .call-status-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: #f8f9fa;
-            border-bottom: 1px solid #e9ecef;
-        }
-
-        .call-status-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 15px;
-        }
-
-        .call-stat-card {
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-            border-left: 4px solid #28a745;
-        }
-
-        .call-stat-card:nth-child(2) {
-            border-left-color: #ffc107;
-        }
-
-        .call-stat-card:nth-child(3) {
-            border-left-color: #28a745;
-        }
-
-        .call-stat-card:nth-child(4) {
-            border-left-color: #dc3545;
-        }
-
-        .call-stat-number {
-            font-size: 1.8em;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        .call-stat-label {
-            font-size: 0.85em;
-            color: #666;
-            font-weight: 500;
-        }
-
-        .call-status-actions {
-            display: flex;
-            gap: 10px;
-        }
-
-        .refresh-button, .auto-refresh-button {
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.9em;
-            transition: background-color 0.3s;
-        }
-
-        .refresh-button:hover, .auto-refresh-button:hover {
-            background: #5a6fd8;
-        }
-
-        .auto-refresh-button.active {
-            background: #28a745;
-        }
-
-        .call-status-table-container {
-            overflow-x: auto;
-        }
-
-        .call-status-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9em;
-        }
-
-        .call-status-table th {
-            background: #f8f9fa;
-            padding: 12px 15px;
-            text-align: left;
-            font-weight: 600;
-            color: #333;
-            border-bottom: 2px solid #e9ecef;
-        }
-
-        .call-status-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .call-status-table tr:hover {
-            background-color: #f8f9fa;
-        }
-
-        .call-status-badge {
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.8em;
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-
-        .status-initiated { background: #e3f2fd; color: #1976d2; }
-        .status-call_in_progress { background: #fff3e0; color: #f57c00; }
-        .status-call_completed { background: #e8f5e8; color: #2e7d32; }
-        .status-call_failed { background: #ffebee; color: #c62828; }
-        .status-ringing { background: #f3e5f5; color: #7b1fa2; }
-
-        /* Call Details Modal Styles */
-        .call-info {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .call-info p {
-            margin: 5px 0;
-        }
-
-        .status-timeline {
-            max-height: 400px;
-            overflow-y: auto;
-        }
-
-        .status-timeline-item {
-            display: flex;
-            gap: 15px;
-            padding: 10px;
-            border-left: 3px solid #e9ecef;
-            margin-bottom: 10px;
-            background: #f8f9fa;
-            border-radius: 6px;
-        }
-
-        .status-timestamp {
-            flex-shrink: 0;
-            font-size: 0.85em;
-            color: #666;
-            font-weight: 500;
-            width: 120px;
-        }
-
-        .status-info {
-            flex-grow: 1;
-        }
-
-        .status-message {
-            margin-top: 5px;
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        .call-actions {
-            display: flex;
-            gap: 5px;
-        }
-
-        .call-action-btn {
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 4px 8px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.8em;
-            transition: background-color 0.3s;
-        }
-
-        .call-action-btn:hover {
-            background: #5a6fd8;
-        }
-
-        .refresh-batch-btn {
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.9em;
-            transition: background-color 0.3s ease;
-        }
-
-        .refresh-batch-btn:hover {
-            background: #5a6fd8;
-        }
-
-        .batch-table-wrapper {
-            overflow-x: auto;
-            max-height: 400px;
-            overflow-y: auto;
-        }
-
-        .batch-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9em;
-        }
-
-        .batch-table th {
-            background: #667eea;
-            color: white;
-            padding: 12px 15px;
-            text-align: left;
-            font-weight: 600;
-            white-space: nowrap;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        .batch-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #e9ecef;
-            white-space: nowrap;
-        }
-
-        .batch-table tbody tr:hover {
-            background: #f8f9fa;
-        }
-
-        .loading-row {
-            text-align: center;
-            color: #666;
-            font-style: italic;
-        }
-
-        .batch-status {
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 0.8em;
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-
-        .batch-status.completed {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .batch-status.processing {
-            background: #fff3cd;
-            color: #856404;
-        }
-
-        .batch-status.failed {
-            background: #f8d7da;
-            color: #721c24;
-        }
-
-        .batch-status.pending {
-            background: #d1ecf1;
-            color: #0c5460;
-        }
-
-        .batch-success-rate {
-            font-weight: 600;
-        }
-
-        .batch-success-rate.high {
-            color: #28a745;
-        }
-
-        .batch-success-rate.medium {
-            color: #ffc107;
-        }
-
-        .batch-success-rate.low {
-            color: #dc3545;
-        }
-
-        .batch-actions {
-            display: flex;
-            gap: 5px;
-        }
-
-        .batch-action-btn {
-            padding: 4px 8px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.8em;
-            transition: opacity 0.3s ease;
-        }
-
-        .batch-action-btn:hover {
-            opacity: 0.8;
-        }
-
-        .batch-action-btn.view {
-            background: #17a2b8;
-            color: white;
-        }
-
-        .batch-action-btn.download {
-            background: #28a745;
-            color: white;
-        }
-
-        .batch-action-btn.delete {
-            background: #dc3545;
-            color: white;
-        }
-
-        /* Responsive design for batch section */
-        @media (max-width: 768px) {
-            .batch-stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .batch-table-header {
-                flex-direction: column;
-                gap: 10px;
-                align-items: flex-start;
-            }
-            
-            .batch-table {
-                font-size: 0.8em;
-            }
-            
-            .batch-table th,
-            .batch-table td {
-                padding: 8px 10px;
-            }
-        }
-    </style>
-</head>
-
-        </style>
-    </head>
-    <body>
-
-    <div class="header">
-        <h1>🎙️ Voice Assistant Call Management Dashboard</h1>
-        <p>Enhanced Customer Data Management with CSV Format Display</p>
-        <div style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">
-            <span id="lastStatusUpdate">Last update: Never</span> | 
-            <span id="statusRefreshCount">Refreshes: 0</span> |
-            <span id="totalCustomersDisplay">Total: 0</span>
-        </div>
-    </div>
-
-    <div class="connection-status" id="connectionStatus">Connecting...</div>
-
-    <div class="container">
-        <!-- Statistics Overview -->
-        <div class="statistics-grid">
-            <div class="stat-card">
-                <div class="stat-number" id="totalCustomersStat">0</div>
-                <div class="stat-label">Total Customers</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="todayUploadsStat">0</div>
-                <div class="stat-label">Today's Uploads</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="readyToCallStat">0</div>
-                <div class="stat-label">Ready to Call</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="activeCallsStat">0</div>
-                <div class="stat-label">Active Calls</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="completedCallsStat">0</div>
-                <div class="stat-label">Completed Today</div>
-            </div>
-        </div>
-
-        <!-- Quick Upload Section -->
-        <div class="card">
-            <h3>� CSV File Upload</h3>
-            <div class="upload-section" id="uploadArea">
-                <p>📄 Drag & drop CSV file here or click to browse</p>
-                <p style="font-size: 0.9em; color: #666; margin: 10px 0;">
-                    Expected format: name, phone, loan_id, amount, due_date, state, Cluster, Branch, etc.
-                </p>
-                <input type="file" id="fileInput" accept=".csv" style="display: none;">
-                <button class="upload-button" onclick="document.getElementById('fileInput').click()">
-                    Choose CSV File
-                </button>
-            </div>
-            <div id="uploadStatus" class="log-entry"></div>
-            <div id="uploadProgress" class="progress-container" style="display: none;">
-                <div class="progress-bar" id="progressBar" style="width: 0%;"></div>
-            </div>
-        </div>
-
-        <!-- Batch Upload Details Section -->
-        <div class="card">
-            <h3>📊 Batch Upload Details</h3>
-            <div class="batch-details-container">
-                <div class="batch-stats-grid">
-                    <div class="batch-stat-card">
-                        <div class="batch-stat-number" id="totalBatchesStat">0</div>
-                        <div class="batch-stat-label">Total Batches</div>
-                    </div>
-                    <div class="batch-stat-card">
-                        <div class="batch-stat-number" id="todayBatchesStat">0</div>
-                        <div class="batch-stat-label">Today's Batches</div>
-                    </div>
-                    <div class="batch-stat-card">
-                        <div class="batch-stat-number" id="totalRecordsStat">0</div>
-                        <div class="batch-stat-label">Total Records</div>
-                    </div>
-                    <div class="batch-stat-card">
-                        <div class="batch-stat-number" id="successRateStat">0%</div>
-                        <div class="batch-stat-label">Success Rate</div>
-                    </div>
-                </div>
-                <div class="batch-table-container">
-                    <div class="batch-table-header">
-                        <h4>📄 Recent File Uploads</h4>
-                        <div class="batch-controls">
-                            <select id="batchDateFilter" class="filter-select">
-                                <option value="today">Today</option>
-                                <option value="week">Past Week</option>
-                                <option value="month">Past Month</option>
-                                <option value="">All Time</option>
-                            </select>
-                            <select id="batchPageSize" class="filter-select">
-                                <option value="10">10 per page</option>
-                                <option value="20" selected>20 per page</option>
-                                <option value="30">30 per page</option>
-                                <option value="50">50 per page</option>
-                                <option value="100">100 per page</option>
-                                <option value="all">All</option>
-                            </select>
-                            <button class="batch-btn" id="selectAllBatchBtn">Select All Filtered</button>
-                            <button class="refresh-batch-btn" onclick="loadBatchDetails()">🔄 Refresh</button>
-                        </div>
-                    </div>
-                    <div class="batch-table-wrapper">
-                        <table class="batch-table" id="batchTable">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <input type="checkbox" id="batchSelectAllPage" title="Select all on this page">
-                                    </th>
-                                    <th>File Name</th>
-                                    <th>Upload Date</th>
-                                    <th>Total Records</th>
-                                    <th>Success Rate</th>
-                                    <th>Status</th>
-                                    <th>Uploaded By</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody id="batchTableBody">
-                                <tr>
-                                    <td colspan="8" class="loading-row">Loading batch data...</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="batch-pagination">
-                        <div class="batch-pagination-info">
-                            <span id="batchPaginationInfo">Showing 0 - 0 of 0 uploads</span>
-                        </div>
-                        <div class="batch-pagination-controls">
-                            <button class="batch-btn" id="batchPrevBtn" disabled>← Previous</button>
-                            <span id="batchCurrentPageInfo">Page 1 of 1</span>
-                            <button class="batch-btn" id="batchNextBtn" disabled>Next →</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Call Status Tracking Section
-        <div class="card">
-            <h3>📞 Call Status Tracking</h3>
-            <div class="call-status-container">
-                <div class="call-status-header">
-                    <div class="call-status-stats">
-                        <div class="call-stat-card">
-                            <div class="call-stat-number" id="totalCallsStat">0</div>
-                            <div class="call-stat-label">Total Calls</div>
-                        </div>
-                        <div class="call-stat-card">
-                            <div class="call-stat-number" id="inProgressCallsStat">0</div>
-                            <div class="call-stat-label">In Progress</div>
-                        </div>
-                        <div class="call-stat-card">
-                            <div class="call-stat-number" id="completedCallsStat">0</div>
-                            <div class="call-stat-label">Completed</div>
-                        </div>
-                        <div class="call-stat-card">
-                            <div class="call-stat-number" id="failedCallsStat">0</div>
-                            <div class="call-stat-label">Failed</div>
-                        </div>
-                    </div>
-                    <div class="call-status-actions">
-                        <button class="refresh-button" onclick="loadCallStatuses()">🔄 Refresh</button>
-                        <button class="auto-refresh-button" onclick="toggleAutoRefresh()">
-                            <span id="autoRefreshText">▶️ Auto Refresh</span>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="call-status-table-container">
-                    <table class="call-status-table">
-                        <thead>
-                            <tr>
-                                <th>Customer</th>
-                                <th>Phone</th>
-                                <th>Call SID</th>
-                                <th>Status</th>
-                                <th>Message</th>
-                                <th>Timestamp</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="callStatusTableBody">
-                            <tr>
-                                <td colspan="7" class="loading-row">Loading call status data...</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- Enhanced Filter Section -->
-        <div class="card">
-            <h3>🔍 Advanced Filters & Search</h3>
-            <div class="filter-section">
-                <div class="filter-grid">
-                    <div class="filter-group">
-                        <label class="filter-label">🔍 Search</label>
-                        <input type="text" class="filter-input" id="searchInput" 
-                               placeholder="Search by name, phone, loan ID...">
-                    </div>
-                    <div class="filter-group">
-                        <label class="filter-label">📅 Upload Date</label>
-                        <select class="filter-select" id="uploadDateFilter">
-                            <option value="">All Dates</option>
-                            <option value="today">Today</option>
-                            <option value="yesterday">Yesterday</option>
-                            <option value="this-week">This Week</option>
-                            <option value="last-week">Last Week</option>
-                            <option value="this-month">This Month</option>
-                            <option value="custom">Custom Range</option>
-                        </select>
-                    </div>
-                    <div class="filter-group" id="customDateRange" style="display: none;">
-                        <label class="filter-label">📅 Date Range</label>
-                        <div style="display: flex; gap: 5px;">
-                            <input type="date" class="filter-input" id="startDate">
-                            <input type="date" class="filter-input" id="endDate">
-                        </div>
-                    </div>
-                    <div class="filter-group">
-                        <label class="filter-label">� Call Status</label>
-                        <select class="filter-select" id="callStatusFilter">
-                            <option value="">All Statuses</option>
-                            <option value="ready">Ready</option>
-                            <option value="calling">Calling</option>
-                            <option value="in-progress">In Progress</option>
-                            <option value="completed">Completed</option>
-                            <option value="failed">Failed</option>
-                            <option value="agent-transfer">Agent Transfer</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label class="filter-label">🌍 State</label>
-                        <select class="filter-select" id="stateFilter">
-                            <option value="">All States</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label class="filter-label">🏢 Cluster</label>
-                        <select class="filter-select" id="clusterFilter">
-                            <option value="">All Clusters</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label class="filter-label">🏪 Branch</label>
-                        <select class="filter-select" id="branchFilter">
-                            <option value="">All Branches</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label class="filter-label">👤 Employee</label>
-                        <select class="filter-select" id="employeeFilter">
-                            <option value="">All Employees</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div class="bulk-actions">
-                    <span class="selected-count" id="selectedCount">0 selected</span>
-                    <button class="bulk-btn bulk-btn-primary" id="refreshDataBtn">
-                        🔄 Refresh Data
-                    </button>
-                    <button class="bulk-btn" id="selectAllFilteredBtn">
-                        ✅ Select All Filtered
-                    </button>
-                    <button class="bulk-btn bulk-btn-success" id="callSelectedBtn" disabled>
-                        📞 Call Selected (<span id="selectedCountText">0</span>)
-                    </button>
-                    <button class="bulk-btn bulk-btn-warning" id="updateSelectedStatusBtn" disabled>
-                        📊 Update Status
-                    </button>
-                    <button class="bulk-btn" id="exportSelectedBtn" disabled>
-                        📥 Export Selected
-                    </button>
-                    <button class="bulk-btn" id="clearFiltersBtn">
-                        🗑️ Clear Filters
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Customer Data Table in CSV Format -->
-        <div class="card">
-            <h3>👥 Customer Data (Live Database Feed)</h3>
-            
-            <!-- Dynamic Pagination Status -->
-            <div id="paginationStatus" style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0; padding: 10px 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 6px; font-weight: 500;">
-                <div>
-                    <span id="currentViewInfo">📊 Currently viewing records 1-20 of 49 total</span>
-                </div>
-                <div>
-                    <span id="serialRangeInfo">🔢 Serial No. 1 to 20</span>
-                </div>
-            </div>
-            
-            <div style="margin-bottom: 15px; padding: 10px; background: #e8f5e8; border-radius: 6px; border-left: 4px solid #28a745;">
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <span style="color: #28a745; font-weight: 600;">🟢 Live Database Connection</span>
-                    <span style="font-size: 0.9em; color: #666;">
-                        Data automatically synced from PostgreSQL database every 5 minutes
-                    </span>
-                    <button class="bulk-btn bulk-btn-primary" onclick="loadCustomerData(true)" style="margin-left: auto; padding: 4px 8px; font-size: 0.8em;">
-                        🔄 Refresh Now
-                    </button>
-                </div>
-            </div>
-
-            <!-- Customer Display Controls -->
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px; border: 1px solid #e9ecef;">
-                <div style="display: flex; align-items: center; gap: 15px;">
-                    <div style="display: flex; align-items: center; gap: 8px;">
-                        <label style="font-weight: 600; color: #495057;">Show:</label>
-                        <select id="customerDisplayLimit" class="filter-select" style="width: auto; min-width: 80px; padding: 8px 12px; border: 2px solid #007bff; border-radius: 6px; background-color: white; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">
-                            <option value="10">10</option>
-                            <option value="20" selected>20</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                            <option value="200">200</option>
-                            <option value="500">500</option>
-                            <option value="all">All</option>
-                        </select>
-                        <span style="font-weight: 500; color: #495057;">customers</span>
-                    </div>
-                    <div style="height: 20px; width: 1px; background: #dee2e6;"></div>
-                    <button class="bulk-btn bulk-btn-primary" id="selectAllDisplayedBtn" style="padding: 8px 12px; font-size: 0.9em;">
-                        ☑️ Select All Displayed
-                    </button>
-                    <button class="bulk-btn bulk-btn-warning" id="deselectAllBtn" style="padding: 8px 12px; font-size: 0.9em;">
-                        ❌ Deselect All
-                    </button>
-                </div>
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <span id="displayedCustomersInfo" style="font-weight: 600; color: #495057;">
-                        Showing 0 of 0 customers
-                    </span>
-                    <span id="selectedCustomersInfo" style="font-weight: 600; color: #007bff; background: #e3f2fd; padding: 4px 8px; border-radius: 4px;">
-                        0 selected
-                    </span>
-                </div>
-            </div>
-            <div class="csv-data-container">
-                <div class="table-container">
-                    <table class="csv-table" id="customerTable">
-                        <thead>
-                            <tr>
-                                <th style="width: 40px;">
-                                    <input type="checkbox" id="selectAll">
-                                </th>
-                                <th style="width: 60px;">S.No.</th>
-                                <th>Upload Date</th>
-                                <th>Name</th>
-                                <th>Phone</th>
-                                <th>Loan ID</th>
-                                <th>Amount</th>
-                                <th>Due Date</th>
-                                <th>State</th>
-                                <th>Cluster</th>
-                                <th>Branch</th>
-                                <th>Branch Contact</th>
-                                <th>Employee</th>
-                                <th>Employee ID</th>
-                                <th>Employee Contact</th>
-                                <th>Last Paid Date</th>
-                                <th>Last Paid Amount</th>
-                                <th>Due Amount</th>
-                                <th>Call Status</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="customerTableBody">
-                            <tr>
-                                <td colspan="19" style="text-align: center; padding: 40px; color: #666;">
-                                    <div class="loading"></div>
-                                    <div style="margin-top: 10px;">Loading customer data...</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- Real-time Call Status -->
-        <div class="card">
-            <h3>🔄 Real-time Call Status & Activity Log</h3>
-            <div id="callStatusContainer">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px;">
-                    <div class="stat-card" style="border-left-color: #28a745;">
-                        <div class="stat-number" id="activeCallsCount">0</div>
-                        <div class="stat-label">Active Calls</div>
-                    </div>
-                    <div class="stat-card" style="border-left-color: #ffc107;">
-                        <div class="stat-number" id="queuedCallsCount">0</div>
-                        <div class="stat-label">Queued Calls</div>
-                    </div>
-                    <div class="stat-card" style="border-left-color: #17a2b8;">
-                        <div class="stat-number" id="completedTodayCount">0</div>
-                        <div class="stat-label">Completed Today</div>
-                    </div>
-                </div>
-                <div id="activityLog" style="background: #f8f9fa; border-radius: 8px; padding: 15px; max-height: 300px; overflow-y: auto;">
-                    <div style="color: #666; text-align: center; padding: 20px;">
-                        No recent activity
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Customer Details Modal -->
-    <div class="customer-modal" id="customerModal">
-        <div class="modal-content">
-            <span class="modal-close" id="modalClose">&times;</span>
-            <h3>👤 Customer Details</h3>
-            <div id="customerDetailsContent">
-                <!-- Content will be populated dynamically -->
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Global variables
+// Global variables
         let customers = [];
         let filteredCustomers = [];
         let displayedCustomers = [];
         let selectedCustomers = new Set();
+        let currentPage = 1;
+        let recordsPerPage;
         
         // Batch upload pagination variables
         let batchCurrentPage = 1;
@@ -1409,6 +29,19 @@
                 const selectedSize = batchSizeDropdown.value;
                 batchPageSize = selectedSize === 'all' ? 'all' : parseInt(selectedSize, 10);
             }
+            
+            // Set default customer records per page to 20
+            const recordsDropdown = document.getElementById('recordsPerPage');
+            if (recordsDropdown) {
+                recordsDropdown.value = '20';  // Set default to 20
+                recordsPerPage = parseInt(recordsDropdown.value, 10);
+                console.log('Initialized recordsPerPage dropdown to:', recordsDropdown.value);
+                console.log('Set recordsPerPage variable to:', recordsPerPage);
+            } else {
+                console.error('Could not find recordsPerPage dropdown during initialization');
+                recordsPerPage = 20;  // Fallback value
+            }
+            
             
             loadBatchDetails();
             loadCallStatuses();
@@ -1510,20 +143,6 @@
             document.getElementById('startDate').addEventListener('change', applyFilters);
             document.getElementById('endDate').addEventListener('change', applyFilters);
 
-            // Customer display controls
-            document.getElementById('customerDisplayLimit').addEventListener('change', function() {
-                // Visual feedback
-                this.style.backgroundColor = '#e3f2fd';
-                setTimeout(() => { this.style.backgroundColor = 'white'; }, 300);
-                
-                renderCustomerTable();
-                updateDisplayInfo();
-                showToast(`Displaying ${this.value === 'all' ? 'all' : this.value} customers`, 'info');
-            });
-
-            document.getElementById('selectAllDisplayedBtn').addEventListener('click', selectAllDisplayedCustomers);
-            document.getElementById('deselectAllBtn').addEventListener('click', deselectAllCustomers);
-
             // Bulk action buttons
             document.getElementById('refreshDataBtn').addEventListener('click', () => loadCustomerData(true));
             document.getElementById('selectAllFilteredBtn').addEventListener('click', selectAllFilteredCustomers);
@@ -1531,6 +150,70 @@
             document.getElementById('updateSelectedStatusBtn').addEventListener('click', updateSelectedStatus);
             document.getElementById('exportSelectedBtn').addEventListener('click', exportSelectedCustomers);
             document.getElementById('clearFiltersBtn').addEventListener('click', clearAllFilters);
+
+            // Pagination
+            const recordsPerPageSelect = document.getElementById('recordsPerPage');
+            if (recordsPerPageSelect) {
+                console.log('Records per page dropdown found, initializing event listener');
+                recordsPerPageSelect.addEventListener('change', function() {
+                    console.log('=== PAGINATION CHANGE EVENT ===');
+                    console.log('Dropdown value changed to:', this.value);
+                    console.log('Type of this.value:', typeof this.value);
+                    console.log('Previous recordsPerPage was:', recordsPerPage);
+                    console.log('Type of previous recordsPerPage:', typeof recordsPerPage);
+                    
+                    // Add visual feedback
+                    this.style.backgroundColor = '#e3f2fd';
+                    setTimeout(() => {
+                        this.style.backgroundColor = 'white';
+                    }, 300);
+                    
+                    // Update recordsPerPage variable
+                    if (this.value === 'all') {
+                        recordsPerPage = 'all';
+                    } else {
+                        recordsPerPage = parseInt(this.value, 10);  // Use radix 10 for proper parsing
+                    }
+                    
+                    console.log('New recordsPerPage set to:', recordsPerPage);
+                    console.log('Type of new recordsPerPage:', typeof recordsPerPage);
+                    
+                    // Reset to first page
+                    currentPage = 1;
+                    console.log('currentPage reset to:', currentPage);
+                    
+                    // Re-render table with new pagination
+                    console.log('About to call renderCustomerTable...');
+                    renderCustomerTable();
+                    
+                    console.log('About to call updatePaginationInfo...');
+                    updatePaginationInfo();
+                    
+                    // Show notification
+                    showNotification(`Showing ${this.value === 'all' ? 'all' : this.value} records per page`, 'success');
+                    console.log('=== PAGINATION CHANGE EVENT END ===');
+                });
+            } else {
+                console.error('Records per page dropdown not found!');
+            }
+            
+            document.getElementById('prevPageBtn').addEventListener('click', function() {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderCustomerTable();
+                }
+            });
+            
+            document.getElementById('nextPageBtn').addEventListener('click', function() {
+                if (recordsPerPage === 'all') {
+                    return; // No pagination when showing all records
+                }
+                const totalPages = Math.ceil(filteredCustomers.length / recordsPerPage);
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderCustomerTable();
+                }
+            });
 
             // Select all checkbox
             document.getElementById('selectAll').addEventListener('change', function() {
@@ -1664,6 +347,7 @@
                 
                 populateFilterOptions();
                 applyFilters();
+                updatePaginationInfo();
                 updateStatistics();
                 
                 const timestamp = getCurrentISTTime();
@@ -1676,6 +360,12 @@
                 
                 // Update last refresh time in header
                 document.getElementById('lastStatusUpdate').textContent = `Last update: ${timestamp} IST`;
+                
+                // Ensure pagination is properly set up after data load
+                setTimeout(() => {
+                    updatePaginationInfo();
+                    console.log('Post-load pagination info updated');
+                }, 100);
                 
             } catch (error) {
                 console.error('Error loading customers:', error);
@@ -2345,7 +1035,9 @@
                 return true;
             });
 
+            currentPage = 1;
             renderCustomerTable();
+            updatePaginationInfo();
             updateStatistics();
         }
 
@@ -2405,17 +1097,24 @@
 
         // Render customer table
         function renderCustomerTable() {
+            console.log('=== RENDER CUSTOMER TABLE START ===');
+            console.log('recordsPerPage:', recordsPerPage, '(type:', typeof recordsPerPage, ')');
+            console.log('currentPage:', currentPage);
+            console.log('filteredCustomers.length:', filteredCustomers.length);
+            
             const tbody = document.getElementById('customerTableBody');
             
-            // Get the display limit from dropdown
-            const displayLimit = document.getElementById('customerDisplayLimit').value;
             let pageCustomers;
-            
-            if (displayLimit === 'all') {
+            if (recordsPerPage === 'all') {
                 pageCustomers = filteredCustomers;
+                console.log('Mode: Showing ALL customers, count:', pageCustomers.length);
             } else {
-                const limit = parseInt(displayLimit, 10);
-                pageCustomers = filteredCustomers.slice(0, limit);
+                const startIndex = (currentPage - 1) * recordsPerPage;
+                const endIndex = startIndex + recordsPerPage;
+                pageCustomers = filteredCustomers.slice(startIndex, endIndex);
+                console.log(`Mode: Pagination - startIndex: ${startIndex}, endIndex: ${endIndex}`);
+                console.log(`Showing customers ${startIndex + 1} to ${Math.min(endIndex, filteredCustomers.length)} of ${filteredCustomers.length}`);
+                console.log('pageCustomers.length:', pageCustomers.length);
             }
             
             // Update displayedCustomers for select all functionality
@@ -2429,13 +1128,17 @@
                         </td>
                     </tr>
                 `;
-                updateDisplayInfo();
                 return;
             }
 
             tbody.innerHTML = pageCustomers.map((customer, index) => {
-                // Simple serial number (no pagination)
-                const serialNo = index + 1;
+                // Calculate serial number based on pagination
+                let serialNo;
+                if (recordsPerPage === 'all') {
+                    serialNo = index + 1;
+                } else {
+                    serialNo = (currentPage - 1) * recordsPerPage + index + 1;
+                }
                 
                 const loan = customer.loans[0] || {};
                 const uploadDate = getUploadDateBadge(customer.first_uploaded_at);
@@ -2488,8 +1191,10 @@
                     </tr>
                 `;
             }).join('');
-            
-            updateDisplayInfo();
+
+            console.log('Table HTML generated, rows count:', pageCustomers.length);
+            updatePaginationInfo();
+            console.log('=== RENDER CUSTOMER TABLE END ===');
         }
 
         // Get upload date badge with IST timezone support
@@ -2614,75 +1319,86 @@
             document.getElementById('selectedCount').textContent = `${count} selected`;
             document.getElementById('selectedCountText').textContent = count;
             
-            // Update the new selected customers info
-            const selectedInfo = document.getElementById('selectedCustomersInfo');
-            if (selectedInfo) {
-                selectedInfo.textContent = `${count} selected`;
-            }
-            
             const hasSelection = count > 0;
             document.getElementById('callSelectedBtn').disabled = !hasSelection;
             document.getElementById('updateSelectedStatusBtn').disabled = !hasSelection;
             document.getElementById('exportSelectedBtn').disabled = !hasSelection;
         }
 
-        // Update display information
-        function updateDisplayInfo() {
-            const displayLimit = document.getElementById('customerDisplayLimit').value;
-            const totalFiltered = filteredCustomers.length;
-            const displayed = displayedCustomers.length;
+        // Update pagination info
+        function updatePaginationInfo() {
+            console.log('=== UPDATE PAGINATION INFO ===');
+            console.log('recordsPerPage:', recordsPerPage, '(type:', typeof recordsPerPage, ')');
+            console.log('currentPage:', currentPage);
+            console.log('filteredCustomers.length:', filteredCustomers.length);
             
-            const displayInfo = document.getElementById('displayedCustomersInfo');
-            if (displayInfo) {
-                if (displayLimit === 'all') {
-                    displayInfo.textContent = `Showing all ${displayed} customers`;
-                } else {
-                    displayInfo.textContent = `Showing ${displayed} of ${totalFiltered} customers`;
-                }
+            const totalRecords = filteredCustomers.length;
+            
+            if (recordsPerPage === 'all') {
+                document.getElementById('paginationInfo').innerHTML = 
+                    `<strong>Showing all ${totalRecords} records</strong><br>
+                     <small style="color: #6c757d;">Serial No. 1 to ${totalRecords}</small>`;
+                
+                // Update page jump controls
+                document.getElementById('pageJumpInput').value = 1;
+                document.getElementById('pageJumpInput').max = 1;
+                document.getElementById('totalPagesSpan').textContent = '1';
+                
+                // Update dynamic status
+                document.getElementById('currentViewInfo').textContent = 
+                    `📊 Currently viewing all ${totalRecords} records`;
+                document.getElementById('serialRangeInfo').textContent = 
+                    `🔢 Serial No. 1 to ${totalRecords}`;
+                
+                document.getElementById('prevPageBtn').disabled = true;
+                document.getElementById('nextPageBtn').disabled = true;
+                document.getElementById('pageJumpInput').disabled = true;
+            } else {
+                const startRecord = (currentPage - 1) * recordsPerPage + 1;
+                const endRecord = Math.min(currentPage * recordsPerPage, totalRecords);
+                const totalPages = Math.ceil(totalRecords / recordsPerPage);
+                
+                console.log('Calculated values:');
+                console.log('  startRecord:', startRecord);
+                console.log('  endRecord:', endRecord);
+                console.log('  totalPages:', totalPages);
+
+                document.getElementById('paginationInfo').innerHTML = 
+                    `<strong>Showing ${startRecord}-${endRecord} of ${totalRecords} records</strong><br>
+                     <small style="color: #6c757d;">Serial No. ${startRecord} to ${endRecord}</small>`;
+                
+                // Update page jump controls
+                document.getElementById('pageJumpInput').value = currentPage;
+                document.getElementById('pageJumpInput').max = totalPages;
+                document.getElementById('totalPagesSpan').textContent = totalPages;
+                
+                // Update dynamic status
+                document.getElementById('currentViewInfo').textContent = 
+                    `📊 Currently viewing records ${startRecord}-${endRecord} of ${totalRecords} total`;
+                document.getElementById('serialRangeInfo').textContent = 
+                    `🔢 Serial No. ${startRecord} to ${endRecord}`;
+                
+                document.getElementById('prevPageBtn').disabled = currentPage === 1;
+                document.getElementById('nextPageBtn').disabled = currentPage === totalPages || totalPages === 0;
+                document.getElementById('pageJumpInput').disabled = totalPages <= 1;
             }
-            
-            updateSelectionCount();
+            console.log('=== END UPDATE PAGINATION INFO ===');
         }
 
-        // Select all displayed customers
-        function selectAllDisplayedCustomers() {
-            if (displayedCustomers.length === 0) {
-                showToast('No customers available to select', 'warning');
-                return;
+        // Jump to specific page
+        function jumpToPage(pageNumber) {
+            const totalPages = Math.ceil(filteredCustomers.length / recordsPerPage);
+            const page = parseInt(pageNumber);
+            
+            if (page >= 1 && page <= totalPages) {
+                currentPage = page;
+                renderCustomerTable();
+                updatePaginationInfo();
+                showNotification(`Jumped to page ${page}`, 'info');
+            } else {
+                document.getElementById('pageJumpInput').value = currentPage;
+                showNotification(`Please enter a page number between 1 and ${totalPages}`, 'warning');
             }
-
-            displayedCustomers.forEach(customer => {
-                selectedCustomers.add(customer.id);
-            });
-
-            // Update checkboxes in the table
-            const checkboxes = document.querySelectorAll('#customerTableBody input[type="checkbox"]');
-            checkboxes.forEach(cb => {
-                cb.checked = true;
-            });
-
-            updateSelectionCount();
-            showToast(`Selected all ${displayedCustomers.length} displayed customers`, 'success');
-        }
-
-        // Deselect all customers
-        function deselectAllCustomers() {
-            selectedCustomers.clear();
-
-            // Update checkboxes in the table
-            const checkboxes = document.querySelectorAll('#customerTableBody input[type="checkbox"]');
-            checkboxes.forEach(cb => {
-                cb.checked = false;
-            });
-
-            // Update select all checkbox
-            const selectAllCheckbox = document.getElementById('selectAll');
-            if (selectAllCheckbox) {
-                selectAllCheckbox.checked = false;
-            }
-
-            updateSelectionCount();
-            showToast('Deselected all customers', 'info');
         }
 
         // Update statistics with IST timezone
@@ -3115,6 +1831,3 @@
             if (refreshInterval) clearInterval(refreshInterval);
             if (ws) ws.close();
         });
-    </script>
-</body>
-</html>

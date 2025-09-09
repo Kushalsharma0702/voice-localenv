@@ -272,6 +272,8 @@ class EnhancedCSVProcessor:
             # Update existing customer (only customer-specific fields)
             existing_customer.state = csv_row.state or existing_customer.state
             existing_customer.updated_at = datetime.utcnow()
+            # Update first_uploaded_at to reflect the latest upload date
+            existing_customer.first_uploaded_at = datetime.utcnow()
             
             csv_row.matched_customer_id = str(existing_customer.id)
             csv_row.match_method = match_method
