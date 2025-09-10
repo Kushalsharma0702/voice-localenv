@@ -1493,10 +1493,22 @@ async def get_uploaded_files(
     """
     print(f"📄 [CHECKPOINT] /api/uploaded-files endpoint hit - page: {page}, page_size: {page_size}, filter: {date_filter}")
     
+    # Validate input parameters
+    if page < 1:
+        page = 1
+    if page_size < 1:
+        page_size = 25
+    if page_size > 1000:  # Prevent excessive load
+        page_size = 1000
+    
     try:
         from database.schemas import get_session, FileUpload
         from sqlalchemy import desc, and_
         from datetime import datetime, timedelta
+        import pytz
+        
+        # IST timezone setup
+        IST = pytz.timezone('Asia/Kolkata')
         
         session = get_session()
         try:
@@ -1505,16 +1517,20 @@ async def get_uploaded_files(
             
             # Apply date filtering if specified
             if date_filter:
-                now = datetime.now()
+                # Get current time in IST and convert to UTC for database comparison
+                ist_now = datetime.now(IST)
                 if date_filter == 'today':
-                    start_date = now.replace(hour=0, minute=0, second=0, microsecond=0)
-                    query = query.filter(FileUpload.uploaded_at >= start_date)
+                    start_date_ist = ist_now.replace(hour=0, minute=0, second=0, microsecond=0)
+                    start_date_utc = start_date_ist.astimezone(pytz.UTC).replace(tzinfo=None)
+                    query = query.filter(FileUpload.uploaded_at >= start_date_utc)
                 elif date_filter == 'week':
-                    start_date = now - timedelta(days=7)
-                    query = query.filter(FileUpload.uploaded_at >= start_date)
+                    start_date_ist = ist_now - timedelta(days=7)
+                    start_date_utc = start_date_ist.astimezone(pytz.UTC).replace(tzinfo=None)
+                    query = query.filter(FileUpload.uploaded_at >= start_date_utc)
                 elif date_filter == 'month':
-                    start_date = now - timedelta(days=30)
-                    query = query.filter(FileUpload.uploaded_at >= start_date)
+                    start_date_ist = ist_now - timedelta(days=30)
+                    start_date_utc = start_date_ist.astimezone(pytz.UTC).replace(tzinfo=None)
+                    query = query.filter(FileUpload.uploaded_at >= start_date_utc)
             
             # Get total count for pagination
             total_count = query.count()
@@ -1588,6 +1604,10 @@ async def get_uploaded_file_ids(date_filter: str = None):
         from database.schemas import get_session, FileUpload
         from sqlalchemy import desc
         from datetime import datetime, timedelta
+        import pytz
+        
+        # IST timezone setup
+        IST = pytz.timezone('Asia/Kolkata')
         
         session = get_session()
         try:
@@ -1596,16 +1616,20 @@ async def get_uploaded_file_ids(date_filter: str = None):
             
             # Apply date filtering if specified
             if date_filter:
-                now = datetime.now()
+                # Get current time in IST and convert to UTC for database comparison
+                ist_now = datetime.now(IST)
                 if date_filter == 'today':
-                    start_date = now.replace(hour=0, minute=0, second=0, microsecond=0)
-                    query = query.filter(FileUpload.uploaded_at >= start_date)
+                    start_date_ist = ist_now.replace(hour=0, minute=0, second=0, microsecond=0)
+                    start_date_utc = start_date_ist.astimezone(pytz.UTC).replace(tzinfo=None)
+                    query = query.filter(FileUpload.uploaded_at >= start_date_utc)
                 elif date_filter == 'week':
-                    start_date = now - timedelta(days=7)
-                    query = query.filter(FileUpload.uploaded_at >= start_date)
+                    start_date_ist = ist_now - timedelta(days=7)
+                    start_date_utc = start_date_ist.astimezone(pytz.UTC).replace(tzinfo=None)
+                    query = query.filter(FileUpload.uploaded_at >= start_date_utc)
                 elif date_filter == 'month':
-                    start_date = now - timedelta(days=30)
-                    query = query.filter(FileUpload.uploaded_at >= start_date)
+                    start_date_ist = ist_now - timedelta(days=30)
+                    start_date_utc = start_date_ist.astimezone(pytz.UTC).replace(tzinfo=None)
+                    query = query.filter(FileUpload.uploaded_at >= start_date_utc)
             
             # Get all IDs
             upload_ids = [str(upload.id) for upload in query.all()]

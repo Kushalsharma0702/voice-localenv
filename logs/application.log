@@ -8986,3 +8986,35 @@ CONTEXT:  JSON data, line 1: ... "8/25/25", "state": "Tamil Nadu", "Cluster": Na
 2025-09-10 05:05:42 | INFO     | voice_assistant | upload_and_process_csv:66 | 📊 Processing 1 CSV rows
 2025-09-10 05:05:44 | INFO     | voice_assistant | upload_and_process_csv:153 | ✅ CSV processing completed: {'total_records': 1, 'processed_records': 1, 'success_records': 1, 'failed_records': 0, 'new_customers': 0, 'updated_customers': 1, 'new_loans': 0, 'updated_loans': 1, 'duplicate_records': 0, 'errors': []}
 2025-09-10 05:07:31 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-10 05:15:24 | INFO     | voice_assistant | <module>:2746 | Starting server directly from main.py
+2025-09-10 05:15:26 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-10 05:15:26 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-10 05:15:26 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-10 05:15:31 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-10 05:15:31 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-10 05:15:31 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-10 05:15:31 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-10 05:16:27 | INFO     | voice_assistant | upload_and_process_csv:40 | 🔄 Starting CSV upload processing: loan_entries (1).csv
+2025-09-10 05:16:28 | INFO     | voice_assistant | upload_and_process_csv:54 | 📋 Created file upload record: 1c8533ca-89e8-4bc1-a851-85fe473b4888
+2025-09-10 05:16:28 | INFO     | voice_assistant | _parse_csv_file:196 | 📋 CSV columns found: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid A']
+2025-09-10 05:16:28 | INFO     | voice_assistant | _parse_csv_file:197 | 📋 Expected columns: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid Amount', 'Due Amount']
+2025-09-10 05:16:28 | INFO     | voice_assistant | _parse_csv_file:209 | 📊 Parsed 1 rows from CSV
+2025-09-10 05:16:29 | INFO     | voice_assistant | upload_and_process_csv:66 | 📊 Processing 1 CSV rows
+2025-09-10 05:16:31 | INFO     | voice_assistant | upload_and_process_csv:153 | ✅ CSV processing completed: {'total_records': 1, 'processed_records': 1, 'success_records': 1, 'failed_records': 0, 'new_customers': 0, 'updated_customers': 1, 'new_loans': 0, 'updated_loans': 1, 'duplicate_records': 0, 'errors': []}
+2025-09-10 05:17:39 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-10 05:22:59 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-10 05:23:01 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-10 05:23:01 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-10 05:23:01 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-10 05:23:06 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-10 05:23:06 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-10 05:23:06 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-10 05:23:06 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-10 05:25:13 | INFO     | voice_assistant | upload_and_process_csv:40 | 🔄 Starting CSV upload processing: loan_entries_latest.csv
+2025-09-10 05:25:14 | INFO     | voice_assistant | upload_and_process_csv:54 | 📋 Created file upload record: 29a01191-2c9e-42f3-a48e-8ec041add1dc
+2025-09-10 05:25:14 | INFO     | voice_assistant | _parse_csv_file:196 | 📋 CSV columns found: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid Amount', 'Due Amount']
+2025-09-10 05:25:14 | INFO     | voice_assistant | _parse_csv_file:197 | 📋 Expected columns: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid Amount', 'Due Amount']
+2025-09-10 05:25:14 | INFO     | voice_assistant | _parse_csv_file:209 | 📊 Parsed 32 rows from CSV
+2025-09-10 05:25:15 | INFO     | voice_assistant | upload_and_process_csv:66 | 📊 Processing 32 CSV rows
+2025-09-10 05:25:44 | INFO     | voice_assistant | upload_and_process_csv:153 | ✅ CSV processing completed: {'total_records': 32, 'processed_records': 32, 'success_records': 32, 'failed_records': 0, 'new_customers': 0, 'updated_customers': 32, 'new_loans': 0, 'updated_loans': 32, 'duplicate_records': 0, 'errors': []}
+2025-09-10 05:30:48 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
