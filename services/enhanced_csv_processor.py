@@ -253,11 +253,11 @@ class EnhancedCSVProcessor:
         return None, MatchMethod.CREATED_NEW
     
     def find_existing_loan(self, customer_id: str, loan_id: str) -> Optional[Any]:
-        """Find existing loan by customer and loan ID"""
+        """Find existing loan by loan ID (globally unique)"""
         from database.schemas import Loan
         
+        # Since loan_id is globally unique, we only need to search by loan_id
         return self.session.query(Loan).filter(
-            Loan.customer_id == customer_id,
             Loan.loan_id == loan_id
         ).first()
     
@@ -269,11 +269,10 @@ class EnhancedCSVProcessor:
         existing_customer, match_method = self.find_existing_customer(csv_row)
         
         if existing_customer:
-            # Update existing customer (only customer-specific fields)
+            # Update existing customer (only customer-specific fields, but preserve first_uploaded_at)
             existing_customer.state = csv_row.state or existing_customer.state
             existing_customer.updated_at = datetime.utcnow()
-            # Update first_uploaded_at to reflect the latest upload date
-            existing_customer.first_uploaded_at = datetime.utcnow()
+            # DO NOT update first_uploaded_at - it should preserve the original upload date
             
             csv_row.matched_customer_id = str(existing_customer.id)
             csv_row.match_method = match_method

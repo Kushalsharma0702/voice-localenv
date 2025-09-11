@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Assistant Call Management Dashboard</title>
+    <title>Bank Loan Recovery & AI Automation Dashboard</title>
     <style>
         * {
             margin: 0;
@@ -959,8 +959,8 @@
     <body>
 
     <div class="header">
-        <h1>🎙️ Voice Assistant Call Management Dashboard</h1>
-        <p>Enhanced Customer Data Management with CSV Format Display</p>
+        <h1>� Bank Loan Recovery & AI Automation Dashboard</h1>
+        <p>Enterprise-Grade Loan Recovery Management with AI-Powered Automation</p>
         <div style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">
             <span id="lastStatusUpdate">Last update: Never</span> | 
             <span id="statusRefreshCount">Refreshes: 0</span> |
@@ -975,29 +975,29 @@
         <div class="statistics-grid">
             <div class="stat-card">
                 <div class="stat-number" id="totalCustomersStat">0</div>
-                <div class="stat-label">Total Customers</div>
+                <div class="stat-label">Loan Portfolio Overview</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number" id="todayUploadsStat">0</div>
-                <div class="stat-label">Today's Uploads</div>
+                <div class="stat-label">Daily Data Imports</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number" id="readyToCallStat">0</div>
-                <div class="stat-label">Ready to Call</div>
+                <div class="stat-label">Recovery Eligible Accounts</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number" id="activeCallsStat">0</div>
-                <div class="stat-label">Active Calls</div>
+                <div class="stat-label">Active Recovery Processes</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number" id="completedCallsStat">0</div>
-                <div class="stat-label">Completed Today</div>
+                <div class="stat-label">Daily Recovery Completions</div>
             </div>
         </div>
 
         <!-- Quick Upload Section -->
         <div class="card">
-            <h3>� CSV File Upload</h3>
+            <h3>📁 Portfolio Data Management Dashboard</h3>
             <div class="upload-section" id="uploadArea">
                 <p>📄 Drag & drop CSV file here or click to browse</p>
                 <p style="font-size: 0.9em; color: #666; margin: 10px 0;">
@@ -1016,7 +1016,7 @@
 
         <!-- Batch Upload Details Section -->
         <div class="card">
-            <h3>📊 Batch Upload Details</h3>
+            <h3>📊 Data Import Analytics & History</h3>
             <div class="batch-details-container">
                 <div class="batch-stats-grid">
                     <div class="batch-stat-card">
@@ -1152,7 +1152,7 @@
 
         <!-- Enhanced Filter Section -->
         <div class="card">
-            <h3>🔍 Advanced Filters & Search</h3>
+            <h3>🔍 Customer Portfolio Search & Filters</h3>
             <div class="filter-section">
                 <div class="filter-grid">
                     <div class="filter-group">
@@ -1243,7 +1243,7 @@
 
         <!-- Customer Data Table in CSV Format -->
         <div class="card">
-            <h3>👥 Customer Data (Live Database Feed)</h3>
+            <h3>👥 Customer Loan Accounts</h3>
             
             <!-- Dynamic Pagination Status -->
             <div id="paginationStatus" style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0; padding: 10px 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 6px; font-weight: 500;">
@@ -1252,20 +1252,22 @@
                 </div>
                 <div>
                     <span id="serialRangeInfo">🔢 Serial No. 1 to 20</span>
-                </div>
-            </div>
-            
-            <div style="margin-bottom: 15px; padding: 10px; background: #e8f5e8; border-radius: 6px; border-left: 4px solid #28a745;">
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <span style="color: #28a745; font-weight: 600;">🟢 Live Database Connection</span>
-                    <span style="font-size: 0.9em; color: #666;">
-                        Data automatically synced from PostgreSQL database every 5 minutes
-                    </span>
                     <button class="bulk-btn bulk-btn-primary" onclick="loadCustomerData(true)" style="margin-left: auto; padding: 4px 8px; font-size: 0.8em;">
                         🔄 Refresh Now
                     </button>
                 </div>
             </div>
+            
+            <!-- <div style="margin-bottom: 15px; padding: 10px; background: #e8f5e8; border-radius: 6px; border-left: 4px solid #28a745;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="color: #28a745; font-weight: 600;">🟢 Live Database Connection</span>
+                       Data automatically synced from PostgreSQL database every 5 minutes
+                    </span>
+                    <button class="bulk-btn bulk-btn-primary" onclick="loadCustomerData(true)" style="margin-left: auto; padding: 4px 8px; font-size: 0.8em;">
+                        🔄 Refresh Now
+                    </button>
+                </div>
+            </div> -->
 
             <!-- Customer Display Controls -->
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px; border: 1px solid #e9ecef;">
@@ -1344,7 +1346,7 @@
 
         <!-- Real-time Call Status -->
         <div class="card">
-            <h3>🔄 Real-time Call Status & Activity Log</h3>
+            <h3>🔄 Recovery Operations & Communication Monitoring</h3>
             <div id="callStatusContainer">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 20px;">
                     <div class="stat-card" style="border-left-color: #28a745;">
@@ -2329,14 +2331,24 @@
 
                 // Upload date filter
                 if (uploadDateFilter && uploadDateFilter !== 'custom') {
-                    if (!matchesDateFilter(customer.first_uploaded_at, uploadDateFilter)) return false;
+                    // Check both first_uploaded_at AND updated_at for activity on this date
+                    const matchesFirstUpload = matchesDateFilter(customer.first_uploaded_at, uploadDateFilter);
+                    const matchesRecentActivity = matchesDateFilter(customer.updated_at, uploadDateFilter);
+                    
+                    // Customer appears in date filter if they were either first uploaded OR had recent activity on this date
+                    if (!matchesFirstUpload && !matchesRecentActivity) return false;
                 }
 
                 // Custom date range filter
                 if (uploadDateFilter === 'custom' && (startDate || endDate)) {
-                    const uploadDate = new Date(customer.first_uploaded_at).toISOString().split('T')[0];
-                    if (startDate && uploadDate < startDate) return false;
-                    if (endDate && uploadDate > endDate) return false;
+                    const firstUploadDate = new Date(customer.first_uploaded_at).toISOString().split('T')[0];
+                    const lastActivityDate = new Date(customer.updated_at).toISOString().split('T')[0];
+                    
+                    // Check if either first upload or last activity falls within the date range
+                    const firstUploadInRange = (!startDate || firstUploadDate >= startDate) && (!endDate || firstUploadDate <= endDate);
+                    const lastActivityInRange = (!startDate || lastActivityDate >= startDate) && (!endDate || lastActivityDate <= endDate);
+                    
+                    if (!firstUploadInRange && !lastActivityInRange) return false;
                 }
 
                 // Call status filter

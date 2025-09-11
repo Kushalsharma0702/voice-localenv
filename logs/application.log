@@ -9018,3 +9018,244 @@ CONTEXT:  JSON data, line 1: ... "8/25/25", "state": "Tamil Nadu", "Cluster": Na
 2025-09-10 05:25:15 | INFO     | voice_assistant | upload_and_process_csv:66 | 📊 Processing 32 CSV rows
 2025-09-10 05:25:44 | INFO     | voice_assistant | upload_and_process_csv:153 | ✅ CSV processing completed: {'total_records': 32, 'processed_records': 32, 'success_records': 32, 'failed_records': 0, 'new_customers': 0, 'updated_customers': 32, 'new_loans': 0, 'updated_loans': 32, 'duplicate_records': 0, 'errors': []}
 2025-09-10 05:30:48 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-11 21:05:54 | INFO     | voice_assistant | <module>:2852 | Starting server directly from main.py
+2025-09-11 21:05:56 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-11 21:05:56 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-11 21:05:56 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-11 21:06:08 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-11 21:06:08 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-11 21:06:08 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-11 21:06:08 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-11 21:06:41 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-11 22:50:59 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-11 22:51:01 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-11 22:51:01 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-11 22:51:01 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-11 22:51:07 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-11 22:51:07 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-11 22:51:07 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-11 22:51:07 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-11 22:51:34 | INFO     | voice_assistant | upload_and_process_csv:40 | 🔄 Starting CSV upload processing: loan_entries (1).csv
+2025-09-11 22:51:35 | INFO     | voice_assistant | upload_and_process_csv:54 | 📋 Created file upload record: a5654298-9061-4af4-9e48-395c758814f0
+2025-09-11 22:51:35 | INFO     | voice_assistant | _parse_csv_file:196 | 📋 CSV columns found: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid A']
+2025-09-11 22:51:35 | INFO     | voice_assistant | _parse_csv_file:197 | 📋 Expected columns: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid Amount', 'Due Amount']
+2025-09-11 22:51:35 | INFO     | voice_assistant | _parse_csv_file:209 | 📊 Parsed 1 rows from CSV
+2025-09-11 22:51:36 | INFO     | voice_assistant | upload_and_process_csv:66 | 📊 Processing 1 CSV rows
+2025-09-11 22:51:38 | INFO     | voice_assistant | upload_and_process_csv:153 | ✅ CSV processing completed: {'total_records': 1, 'processed_records': 1, 'success_records': 1, 'failed_records': 0, 'new_customers': 0, 'updated_customers': 1, 'new_loans': 0, 'updated_loans': 1, 'duplicate_records': 0, 'errors': []}
+2025-09-11 22:54:46 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-11 22:54:49 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-11 22:54:49 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-11 22:54:49 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-11 22:54:55 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-11 22:54:55 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-11 22:54:55 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-11 22:54:55 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-11 22:55:55 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-11 22:55:58 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-11 22:55:58 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-11 22:55:58 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-11 22:56:03 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-11 22:56:03 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-11 22:56:03 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-11 22:56:03 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:08:17 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:08:22 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-12 02:08:24 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:08:24 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:08:24 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:08:29 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:08:29 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:08:29 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:08:29 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:08:59 | INFO     | voice_assistant | upload_and_process_csv:40 | 🔄 Starting CSV upload processing: loan_entries (1).csv
+2025-09-12 02:09:00 | INFO     | voice_assistant | upload_and_process_csv:54 | 📋 Created file upload record: 904bdf4f-e2e7-4c2f-932e-a0bf50e5d672
+2025-09-12 02:09:00 | INFO     | voice_assistant | _parse_csv_file:196 | 📋 CSV columns found: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid A']
+2025-09-12 02:09:00 | INFO     | voice_assistant | _parse_csv_file:197 | 📋 Expected columns: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid Amount', 'Due Amount']
+2025-09-12 02:09:00 | INFO     | voice_assistant | _parse_csv_file:209 | 📊 Parsed 1 rows from CSV
+2025-09-12 02:09:00 | INFO     | voice_assistant | upload_and_process_csv:66 | 📊 Processing 1 CSV rows
+2025-09-12 02:09:02 | INFO     | voice_assistant | upload_and_process_csv:153 | ✅ CSV processing completed: {'total_records': 1, 'processed_records': 1, 'success_records': 1, 'failed_records': 0, 'new_customers': 0, 'updated_customers': 1, 'new_loans': 0, 'updated_loans': 1, 'duplicate_records': 0, 'errors': []}
+2025-09-12 02:09:32 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:09:35 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:09:35 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:09:35 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:09:41 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:09:41 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:09:41 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:09:41 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:10:05 | INFO     | voice_assistant | upload_and_process_csv:40 | 🔄 Starting CSV upload processing: loan_entries_latest.csv
+2025-09-12 02:10:06 | INFO     | voice_assistant | upload_and_process_csv:54 | 📋 Created file upload record: aa9434bd-5e51-4036-aea3-05d269b9f4e7
+2025-09-12 02:10:06 | INFO     | voice_assistant | _parse_csv_file:196 | 📋 CSV columns found: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid Amount', 'Due Amount']
+2025-09-12 02:10:06 | INFO     | voice_assistant | _parse_csv_file:197 | 📋 Expected columns: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid Amount', 'Due Amount']
+2025-09-12 02:10:06 | INFO     | voice_assistant | _parse_csv_file:209 | 📊 Parsed 32 rows from CSV
+2025-09-12 02:10:06 | INFO     | voice_assistant | upload_and_process_csv:66 | 📊 Processing 32 CSV rows
+2025-09-12 02:10:32 | INFO     | voice_assistant | upload_and_process_csv:153 | ✅ CSV processing completed: {'total_records': 32, 'processed_records': 32, 'success_records': 32, 'failed_records': 0, 'new_customers': 0, 'updated_customers': 32, 'new_loans': 0, 'updated_loans': 32, 'duplicate_records': 0, 'errors': []}
+2025-09-12 02:10:32 | INFO     | voice_assistant | upload_and_process_csv:40 | 🔄 Starting CSV upload processing: loan_entries.csv
+2025-09-12 02:10:33 | INFO     | voice_assistant | upload_and_process_csv:54 | 📋 Created file upload record: 423b7900-f3ec-40c1-858e-da7992930720
+2025-09-12 02:10:33 | INFO     | voice_assistant | _parse_csv_file:196 | 📋 CSV columns found: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state                  ']
+2025-09-12 02:10:33 | INFO     | voice_assistant | _parse_csv_file:197 | 📋 Expected columns: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid Amount', 'Due Amount']
+2025-09-12 02:10:33 | INFO     | voice_assistant | _parse_csv_file:209 | 📊 Parsed 1 rows from CSV
+2025-09-12 02:10:34 | INFO     | voice_assistant | upload_and_process_csv:66 | 📊 Processing 1 CSV rows
+2025-09-12 02:10:35 | ERROR    | voice_assistant | upload_and_process_csv:127 | ❌ Error processing row 1: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_loans_loan_id"
+DETAIL:  Key (loan_id)=(LOAN123) already exists.
+
+[SQL: INSERT INTO loans (id, customer_id, loan_id, principal_amount, outstanding_amount, due_amount, next_due_date, last_paid_date, last_paid_amount, status, cluster, branch, branch_contact_number, employee_name, employee_id, employee_contact_number, created_at, updated_at) VALUES (%(id)s::UUID, %(customer_id)s::UUID, %(loan_id)s, %(principal_amount)s, %(outstanding_amount)s, %(due_amount)s, %(next_due_date)s, %(last_paid_date)s, %(last_paid_amount)s, %(status)s, %(cluster)s, %(branch)s, %(branch_contact_number)s, %(employee_name)s, %(employee_id)s, %(employee_contact_number)s, %(created_at)s, %(updated_at)s)]
+[parameters: {'id': UUID('118a4bb7-8ce2-4aeb-802a-e8be24dfe5b6'), 'customer_id': UUID('0397c25f-99f0-4fb3-a060-03152c9c90be'), 'loan_id': 'LOAN123', 'principal_amount': None, 'outstanding_amount': Decimal('4500'), 'due_amount': None, 'next_due_date': datetime.date(2025, 8, 25), 'last_paid_date': None, 'last_paid_amount': None, 'status': 'active', 'cluster': '', 'branch': '', 'branch_contact_number': '', 'employee_name': '', 'employee_id': '', 'employee_contact_number': '', 'created_at': datetime.datetime(2025, 9, 11, 20, 40, 34, 993361), 'updated_at': datetime.datetime(2025, 9, 11, 20, 40, 34, 993368)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-12 02:10:35 | ERROR    | voice_assistant | upload_and_process_csv:164 | 💥 Critical error in CSV upload: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_loans_loan_id"
+DETAIL:  Key (loan_id)=(LOAN123) already exists.
+
+[SQL: INSERT INTO loans (id, customer_id, loan_id, principal_amount, outstanding_amount, due_amount, next_due_date, last_paid_date, last_paid_amount, status, cluster, branch, branch_contact_number, employee_name, employee_id, employee_contact_number, created_at, updated_at) VALUES (%(id)s::UUID, %(customer_id)s::UUID, %(loan_id)s, %(principal_amount)s, %(outstanding_amount)s, %(due_amount)s, %(next_due_date)s, %(last_paid_date)s, %(last_paid_amount)s, %(status)s, %(cluster)s, %(branch)s, %(branch_contact_number)s, %(employee_name)s, %(employee_id)s, %(employee_contact_number)s, %(created_at)s, %(updated_at)s)]
+[parameters: {'id': UUID('118a4bb7-8ce2-4aeb-802a-e8be24dfe5b6'), 'customer_id': UUID('0397c25f-99f0-4fb3-a060-03152c9c90be'), 'loan_id': 'LOAN123', 'principal_amount': None, 'outstanding_amount': Decimal('4500'), 'due_amount': None, 'next_due_date': datetime.date(2025, 8, 25), 'last_paid_date': None, 'last_paid_amount': None, 'status': 'active', 'cluster': '', 'branch': '', 'branch_contact_number': '', 'employee_name': '', 'employee_id': '', 'employee_contact_number': '', 'created_at': datetime.datetime(2025, 9, 11, 20, 40, 34, 993361), 'updated_at': datetime.datetime(2025, 9, 11, 20, 40, 34, 993368)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-09-12 02:11:15 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:15:01 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-12 02:15:03 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:15:03 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:15:03 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:15:08 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:15:08 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:15:08 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:15:08 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:16:42 | INFO     | voice_assistant | upload_and_process_csv:40 | 🔄 Starting CSV upload processing: loan_entries.csv
+2025-09-12 02:16:43 | INFO     | voice_assistant | upload_and_process_csv:54 | 📋 Created file upload record: c40c05aa-a424-4f18-bb38-22e27d673c2e
+2025-09-12 02:16:43 | INFO     | voice_assistant | _parse_csv_file:196 | 📋 CSV columns found: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state                  ']
+2025-09-12 02:16:43 | INFO     | voice_assistant | _parse_csv_file:197 | 📋 Expected columns: ['name', 'phone', 'loan_id', 'amount', 'due_date', 'state', 'Cluster', 'Branch', 'Branch Contact Number', 'Employee', 'Employee ID', 'Employee Contact Number', 'Last Paid Date', 'Last Paid Amount', 'Due Amount']
+2025-09-12 02:16:43 | INFO     | voice_assistant | _parse_csv_file:209 | 📊 Parsed 1 rows from CSV
+2025-09-12 02:16:43 | INFO     | voice_assistant | upload_and_process_csv:66 | 📊 Processing 1 CSV rows
+2025-09-12 02:16:45 | INFO     | voice_assistant | upload_and_process_csv:153 | ✅ CSV processing completed: {'total_records': 1, 'processed_records': 1, 'success_records': 1, 'failed_records': 0, 'new_customers': 0, 'updated_customers': 1, 'new_loans': 0, 'updated_loans': 1, 'duplicate_records': 0, 'errors': []}
+2025-09-12 02:17:34 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:22:43 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-12 02:22:45 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:22:45 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:22:45 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:22:49 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:22:49 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:22:49 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:22:49 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:32:42 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:32:45 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:32:45 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:32:45 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:32:50 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:32:50 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:32:50 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:32:50 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:32:52 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:32:55 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:32:55 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:32:55 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:33:00 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:33:00 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:33:00 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:33:00 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:33:04 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:33:06 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:33:06 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:33:06 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:33:11 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:33:11 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:33:11 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:33:11 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:33:11 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:33:14 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:33:14 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:33:14 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:33:19 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:33:19 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:33:19 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:33:19 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:34:35 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:34:37 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:34:37 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:34:37 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:34:42 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:34:42 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:34:42 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:34:42 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:35:51 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:40:29 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-12 02:40:31 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:40:31 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:40:31 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:40:36 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:40:36 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:40:36 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:40:36 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:46:01 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:46:04 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:46:04 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:46:04 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:46:09 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:46:09 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:46:09 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:46:09 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:46:50 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:55:03 | INFO     | voice_assistant | <module>:2807 | Starting server directly from main.py
+2025-09-12 02:55:05 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:55:05 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:55:05 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:55:09 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:55:09 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:55:09 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:55:09 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 02:56:09 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 02:59:29 | INFO     | voice_assistant | <module>:2807 | Starting server directly from main.py
+2025-09-12 02:59:31 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 02:59:31 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 02:59:31 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 02:59:35 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 02:59:35 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 02:59:35 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 02:59:35 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 03:00:58 | INFO     | voice_assistant | <module>:2807 | Starting server directly from main.py
+2025-09-12 03:04:23 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 03:04:27 | INFO     | voice_assistant | <module>:2807 | Starting server directly from main.py
+2025-09-12 03:04:29 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 03:04:29 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 03:04:29 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 03:04:34 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 03:04:34 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 03:04:34 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 03:04:34 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 03:05:29 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 03:05:31 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 03:05:31 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 03:05:31 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 03:05:36 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 03:05:36 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 03:05:36 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 03:05:36 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 03:06:07 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 03:06:10 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 03:06:10 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 03:06:10 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 03:06:14 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 03:06:14 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 03:06:14 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 03:06:14 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 03:06:40 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 03:14:31 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-12 03:14:33 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 03:14:33 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 03:14:33 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 03:14:37 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 03:14:37 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 03:14:37 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 03:14:37 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 03:27:35 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 03:27:37 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 03:27:37 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 03:27:37 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 03:27:42 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 03:27:42 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 03:27:42 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 03:27:42 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 03:41:59 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-12 03:42:01 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 03:42:01 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 03:42:01 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 03:42:07 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 03:42:07 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 03:42:07 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 03:42:07 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 03:47:52 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
