@@ -9259,3 +9259,63 @@ DETAIL:  Key (loan_id)=(LOAN123) already exists.
 2025-09-12 03:42:07 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
 2025-09-12 03:42:07 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
 2025-09-12 03:47:52 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 03:58:29 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-12 03:58:31 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 03:58:31 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 03:58:31 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 03:58:36 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 03:58:36 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 03:58:36 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 03:58:36 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 09:51:52 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-12 09:51:54 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 09:51:54 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 09:51:54 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 09:52:06 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 09:52:06 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 09:52:06 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 09:52:06 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 10:11:07 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-12 10:11:14 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-12 10:11:16 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 10:11:16 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 10:11:16 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 10:11:26 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 10:11:26 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 10:11:26 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 10:11:26 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-12 10:57:11 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-12 10:57:13 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-12 10:57:13 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-12 10:57:13 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-12 10:57:24 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-12 10:57:24 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-12 10:57:24 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-12 10:57:24 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-13 02:50:56 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-13 02:50:57 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-13 02:50:57 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-13 02:50:57 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-13 02:51:05 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-13 02:51:05 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-13 02:51:05 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-13 02:51:05 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-13 03:01:58 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-13 03:02:06 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-13 03:02:08 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-13 03:02:08 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-13 03:02:08 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-13 03:02:17 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-13 03:02:17 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-13 03:02:17 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-13 03:02:17 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-13 03:05:49 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...
+2025-09-13 03:06:08 | INFO     | voice_assistant | <module>:2762 | Starting server directly from main.py
+2025-09-13 03:06:11 | INFO     | voice_assistant | setup_application_logging:304 | 🎉 Logging system initialized
+2025-09-13 03:06:11 | INFO     | voice_assistant | setup_application_logging:305 | 📁 Logs directory: /home/cyberdude/Documents/Projects/voice-local/logs
+2025-09-13 03:06:11 | INFO     | voice_assistant | lifespan:264 | 🚀 Starting Voice Assistant Application...
+2025-09-13 03:06:19 | INFO     | voice_assistant | lifespan:268 | ✅ Database initialized successfully
+2025-09-13 03:06:19 | [32mINFO[0m | voice_assistant.database | lifespan:269 | Database connection established
+2025-09-13 03:06:19 | INFO     | voice_assistant | lifespan:276 | ✅ Redis initialized successfully
+2025-09-13 03:06:19 | INFO     | voice_assistant | lifespan:280 | 🎉 Application startup complete!
+2025-09-13 03:08:12 | INFO     | voice_assistant | lifespan:285 | 🛑 Shutting down Voice Assistant Application...

@@ -457,9 +457,88 @@
             animation: spin 1s linear infinite;
         }
 
+        /* Global Loading Overlay */
+        .global-loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.3s ease;
+        }
+
+        .global-loading-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .global-loader {
+            width: 60px;
+            height: 60px;
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        .loading-text {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .loading-subtext {
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        /* Enhanced Loading States */
+        .card.loading {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card.loading::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+            animation: shimmer 1.5s infinite;
+        }
+
+        .section-loader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .section-loader .loading {
+            margin-right: 10px;
+        }
+
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
         }
 
         /* Progress Bar */
@@ -968,6 +1047,13 @@
         </div>
     </div>
 
+    <!-- Global Loading Overlay -->
+    <div class="global-loading-overlay" id="globalLoadingOverlay">
+        <div class="global-loader"></div>
+        <div class="loading-text" id="loadingText">Loading Dashboard...</div>
+        <div class="loading-subtext" id="loadingSubtext">Please wait while we fetch your data</div>
+    </div>
+
     <div class="connection-status" id="connectionStatus">Connecting...</div>
 
     <div class="container">
@@ -1396,27 +1482,80 @@
         let selectedBatchIds = new Set();
         let ws = null;
         let refreshInterval = null;
+        let autoRefreshInterval = null;
+        let dataRefreshInterval = null;
+        let isInitialLoad = true;
+
+        // Auto-refresh settings
+        const AUTO_REFRESH_INTERVAL = 30000; // 30 seconds
+        const DATA_REFRESH_INTERVAL = 60000;  // 1 minute for full data refresh
 
         // Initialize dashboard
         document.addEventListener('DOMContentLoaded', function() {
-            initializeWebSocket();
-            initializeEventListeners();
-            loadCustomerData();
+            console.log('🚀 Dashboard initializing...');
+            showGlobalLoading('Initializing Dashboard...', 'Setting up connection and loading data...');
             
-            // Set default batch filter to today and page size to 25
-            const batchSizeDropdown = document.getElementById('batchPageSize');
-            document.getElementById('batchDateFilter').value = 'today';
-            batchDateFilter = 'today';
-            if (batchSizeDropdown) {
-                batchSizeDropdown.value = '25';
-                const selectedSize = batchSizeDropdown.value;
-                batchPageSize = selectedSize === 'all' ? 'all' : parseInt(selectedSize, 10);
-            }
-            
-            loadBatchDetails();
-            loadCallStatuses();
-            setupAutoRefresh();
+            // Initialize in sequence for better user experience
+            initializeDashboard();
         });
+
+        async function initializeDashboard() {
+            try {
+                // Step 1: Initialize WebSocket
+                updateLoadingText('Connecting to server...', 'Establishing real-time connection...');
+                initializeWebSocket();
+                
+                // Step 2: Initialize event listeners
+                updateLoadingText('Setting up interface...', 'Preparing dashboard controls...');
+                initializeEventListeners();
+                
+                // Step 3: Load initial data
+                updateLoadingText('Loading customer data...', 'Fetching latest customer information...');
+                await loadCustomerData(false, true); // Pass true for initial load
+                
+                // Step 4: Load batch data
+                updateLoadingText('Loading batch history...', 'Fetching upload analytics...');
+                
+                // Set default batch filter to today and page size to 25
+                const batchSizeDropdown = document.getElementById('batchPageSize');
+                if (document.getElementById('batchDateFilter')) {
+                    document.getElementById('batchDateFilter').value = 'today';
+                    batchDateFilter = 'today';
+                }
+                if (batchSizeDropdown) {
+                    batchSizeDropdown.value = '25';
+                    const selectedSize = batchSizeDropdown.value;
+                    batchPageSize = selectedSize === 'all' ? 'all' : parseInt(selectedSize, 10);
+                }
+                
+                await loadBatchDetails(true);
+                
+                // Step 5: Load call statuses
+                updateLoadingText('Loading call status...', 'Fetching communication records...');
+                await loadCallStatuses(true);
+                
+                // Step 6: Setup auto-refresh
+                updateLoadingText('Finalizing setup...', 'Enabling real-time updates...');
+                setupAutoRefresh();
+                setupHotReloading();
+                
+                // Step 7: Hide loading overlay
+                setTimeout(() => {
+                    hideGlobalLoading();
+                    showToast('Dashboard loaded successfully!', 'success');
+                    console.log('✅ Dashboard initialization complete');
+                }, 500);
+                
+            } catch (error) {
+                console.error('❌ Dashboard initialization failed:', error);
+                updateLoadingText('Loading failed', `Error: ${error.message}`);
+                
+                setTimeout(() => {
+                    hideGlobalLoading();
+                    showToast('Failed to load dashboard. Please refresh the page.', 'error', 5000);
+                }, 1000);
+            }
+        }
 
         // WebSocket connection
         function initializeWebSocket() {
@@ -1625,29 +1764,68 @@
         }
 
         // Load customer data from database with enhanced error handling
-        async function loadCustomerData(forceRefresh = false) {
+        async function loadCustomerData(forceRefresh = false, isInitialLoad = false) {
             try {
-                showLoading(true);
+                if (!isInitialLoad) {
+                    showLoading(true);
+                }
                 
                 if (forceRefresh) {
                     logActivity('🔄 Force refreshing customer data from database...');
+                } else if (isInitialLoad) {
+                    console.log('📊 Initial load: Loading customer data from database...');
                 } else {
                     logActivity('📊 Loading customer data from database...');
                 }
                 
                 // Add cache-busting parameter to ensure fresh data
                 const cacheBuster = `?_t=${Date.now()}`;
-                const response = await fetch(`/api/customers${cacheBuster}`, {
-                    method: 'GET',
-                    headers: {
-                        'Accept': 'application/json',
-                        'Cache-Control': 'no-cache, no-store, must-revalidate',
-                        'Pragma': 'no-cache',
-                        'Expires': '0'
+                let response;
+                
+                try {
+                    response = await fetch(`/api/customers${cacheBuster}`, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Cache-Control': 'no-cache, no-store, must-revalidate',
+                            'Pragma': 'no-cache',
+                            'Expires': '0'
+                        }
+                    });
+                } catch (fetchError) {
+                    // If API is not available, provide empty data for now
+                    console.warn('API not available, using empty data:', fetchError);
+                    customers = [];
+                    filteredCustomers = [];
+                    selectedCustomers.clear();
+                    updateSelectionCount();
+                    populateFilterOptions();
+                    applyFilters();
+                    updateStatistics();
+                    
+                    if (!isInitialLoad) {
+                        logActivity('⚠️ API not available - using empty data');
                     }
-                });
+                    return;
+                }
                 
                 if (!response.ok) {
+                    // Handle HTTP errors gracefully
+                    if (response.status === 404) {
+                        console.warn('API endpoint not found, using empty data');
+                        customers = [];
+                        filteredCustomers = [];
+                        selectedCustomers.clear();
+                        updateSelectionCount();
+                        populateFilterOptions();
+                        applyFilters();
+                        updateStatistics();
+                        
+                        if (!isInitialLoad) {
+                            logActivity('⚠️ API endpoint not found - using empty data');
+                        }
+                        return;
+                    }
                     throw new Error(`Failed to fetch customers: ${response.status} ${response.statusText}`);
                 }
                 
@@ -1680,36 +1858,58 @@
                 // Update last refresh time in header
                 document.getElementById('lastStatusUpdate').textContent = `Last update: ${timestamp} IST`;
                 
+                // Increment refresh counter
+                const refreshCountEl = document.getElementById('statusRefreshCount');
+                const currentCount = parseInt(refreshCountEl.textContent.split(': ')[1]) || 0;
+                refreshCountEl.textContent = `Refreshes: ${currentCount + 1}`;
+                
             } catch (error) {
                 console.error('Error loading customers:', error);
                 const errorMessage = `Failed to load customer data: ${error.message}`;
-                logActivity(`❌ ${errorMessage}`, 'error');
-                showToast(errorMessage, 'error');
+                
+                if (!isInitialLoad) {
+                    logActivity(`❌ ${errorMessage}`, 'error');
+                    showToast(errorMessage, 'error');
+                }
                 
                 // Show error in table if no data is available
                 if (customers.length === 0) {
                     const tbody = document.getElementById('customerTableBody');
-                    tbody.innerHTML = `
-                        <tr>
-                            <td colspan="19" style="text-align: center; padding: 40px; color: #dc3545;">
-                                <div style="margin-bottom: 10px;">⚠️ Error loading customer data</div>
-                                <div style="font-size: 0.9em;">${error.message}</div>
-                                <button class="bulk-btn bulk-btn-primary" onclick="loadCustomerData(true)" style="margin-top: 15px;">
-                                    🔄 Retry
-                                </button>
-                            </td>
-                        </tr>
-                    `;
+                    if (tbody) {
+                        tbody.innerHTML = `
+                            <tr>
+                                <td colspan="19" style="text-align: center; padding: 40px; color: #dc3545;">
+                                    <div style="margin-bottom: 10px;">⚠️ Error loading customer data</div>
+                                    <div style="font-size: 0.9em;">${error.message}</div>
+                                    <button class="bulk-btn bulk-btn-primary" onclick="loadCustomerData(true)" style="margin-top: 15px;">
+                                        🔄 Retry
+                                    </button>
+                                </td>
+                            </tr>
+                        `;
+                    }
                 }
+                
+                // Re-throw error for initial load to be handled by initialization
+                if (isInitialLoad) {
+                    throw error;
+                }
+                
             } finally {
-                showLoading(false);
+                if (!isInitialLoad) {
+                    showLoading(false);
+                }
             }
         }
 
         // Load batch details from database
-        async function loadBatchDetails() {
+        async function loadBatchDetails(isInitialLoad = false) {
             try {
-                logActivity('📊 Loading batch upload details...');
+                if (!isInitialLoad) {
+                    logActivity('📊 Loading batch upload details...');
+                } else {
+                    console.log('📊 Initial load: Loading batch upload details...');
+                }
                 
                 // Ensure variables are properly initialized
                 if (typeof batchCurrentPage === 'undefined') batchCurrentPage = 1;
@@ -2065,13 +2265,16 @@
 
         // === CALL STATUS TRACKING FUNCTIONS ===
         
-        let autoRefreshInterval = null;
         let isAutoRefresh = false;
 
         // Load call statuses from the API
-        async function loadCallStatuses() {
+        async function loadCallStatuses(isInitialLoad = false) {
             try {
-                logActivity('📞 Loading call status data...');
+                if (!isInitialLoad) {
+                    logActivity('📞 Loading call status data...');
+                } else {
+                    console.log('📞 Initial load: Loading call status data...');
+                }
                 
                 const response = await fetch('/api/call-statuses');
                 if (!response.ok) {
@@ -2641,8 +2844,11 @@
         // Update selection count
         function updateSelectionCount() {
             const count = selectedCustomers.size;
-            document.getElementById('selectedCount').textContent = `${count} selected`;
-            document.getElementById('selectedCountText').textContent = count;
+            const selectedCountEl = document.getElementById('selectedCount');
+            const selectedCountTextEl = document.getElementById('selectedCountText');
+            
+            if (selectedCountEl) selectedCountEl.textContent = `${count} selected`;
+            if (selectedCountTextEl) selectedCountTextEl.textContent = count;
             
             // Update the new selected customers info
             const selectedInfo = document.getElementById('selectedCustomersInfo');
@@ -2651,9 +2857,13 @@
             }
             
             const hasSelection = count > 0;
-            document.getElementById('callSelectedBtn').disabled = !hasSelection;
-            document.getElementById('updateSelectedStatusBtn').disabled = !hasSelection;
-            document.getElementById('exportSelectedBtn').disabled = !hasSelection;
+            const callSelectedBtn = document.getElementById('callSelectedBtn');
+            const updateSelectedStatusBtn = document.getElementById('updateSelectedStatusBtn');
+            const exportSelectedBtn = document.getElementById('exportSelectedBtn');
+            
+            if (callSelectedBtn) callSelectedBtn.disabled = !hasSelection;
+            if (updateSelectedStatusBtn) updateSelectedStatusBtn.disabled = !hasSelection;
+            if (exportSelectedBtn) exportSelectedBtn.disabled = !hasSelection;
         }
 
         // Update display information
@@ -2911,6 +3121,78 @@
             }
         }
 
+        // Update selected customers status
+        async function updateSelectedStatus() {
+            if (selectedCustomers.size === 0) {
+                alert('Please select customers to update status');
+                return;
+            }
+            
+            const newStatus = prompt('Enter new status (ready, calling, completed, failed):');
+            if (!newStatus) return;
+            
+            const validStatuses = ['ready', 'calling', 'completed', 'failed'];
+            if (!validStatuses.includes(newStatus.toLowerCase())) {
+                alert('Invalid status. Please use: ready, calling, completed, or failed');
+                return;
+            }
+            
+            const customerCount = selectedCustomers.size;
+            if (!confirm(`Update status to "${newStatus}" for ${customerCount} selected customers?`)) return;
+            
+            try {
+                logActivity(`🔄 Updating status for ${customerCount} customers to "${newStatus}"`);
+                
+                const bulkBtn = document.getElementById('updateSelectedStatusBtn');
+                const originalText = bulkBtn.textContent;
+                bulkBtn.disabled = true;
+                bulkBtn.textContent = `Updating ${customerCount} customers...`;
+
+                const response = await fetch('/api/update-bulk-status', {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({ 
+                        customer_ids: Array.from(selectedCustomers),
+                        status: newStatus.toLowerCase()
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (response.ok && result.success) {
+                    logActivity(`✅ Status updated successfully for ${customerCount} customers`);
+                    
+                    // Update status for all selected customers in the local data
+                    selectedCustomers.forEach(customerId => {
+                        updateCustomerCallStatus(customerId, newStatus.toLowerCase(), `Status updated to ${newStatus}`);
+                    });
+                    
+                    // Refresh customer data to reflect changes
+                    await loadCustomerData(true);
+                    
+                    showToast(`Status updated for ${customerCount} customers`, 'success');
+                    
+                    // Clear selection
+                    selectedCustomers.clear();
+                    updateSelectionCount();
+                    document.getElementById('selectAll').checked = false;
+                } else {
+                    throw new Error(result.message || `HTTP ${response.status}: ${response.statusText}`);
+                }
+            } catch (error) {
+                console.error('Bulk status update error:', error);
+                logActivity(`❌ Status update failed: ${error.message}`, 'error');
+                alert(`Status update failed: ${error.message}`);
+            } finally {
+                const bulkBtn = document.getElementById('updateSelectedStatusBtn');
+                bulkBtn.disabled = selectedCustomers.size === 0;
+                bulkBtn.textContent = originalText;
+            }
+        }
+
         // Show customer details
         function showCustomerDetails(customerId) {
             const customer = customers.find(c => c.id === customerId);
@@ -3028,6 +3310,64 @@
                                   status === 'error' ? '🔴 Error' : '🟡 Connecting...';
         }
 
+        // Global loading functions
+        function showGlobalLoading(title = 'Loading...', subtitle = '') {
+            const overlay = document.getElementById('globalLoadingOverlay');
+            const titleEl = document.getElementById('loadingText');
+            const subtitleEl = document.getElementById('loadingSubtext');
+            
+            if (overlay) {
+                titleEl.textContent = title;
+                subtitleEl.textContent = subtitle;
+                overlay.classList.remove('hidden');
+                overlay.style.display = 'flex';
+            }
+        }
+
+        function hideGlobalLoading() {
+            const overlay = document.getElementById('globalLoadingOverlay');
+            if (overlay) {
+                overlay.classList.add('hidden');
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 300);
+            }
+        }
+
+        function updateLoadingText(title, subtitle = '') {
+            const titleEl = document.getElementById('loadingText');
+            const subtitleEl = document.getElementById('loadingSubtext');
+            
+            if (titleEl) titleEl.textContent = title;
+            if (subtitleEl) subtitleEl.textContent = subtitle;
+        }
+
+        // Setup hot reloading functionality
+        function setupHotReloading() {
+            console.log('🔥 Setting up hot data reloading...');
+            
+            // Auto-refresh customer data every minute
+            if (dataRefreshInterval) {
+                clearInterval(dataRefreshInterval);
+            }
+            
+            dataRefreshInterval = setInterval(async () => {
+                try {
+                    console.log('🔄 Auto-refreshing customer data...');
+                    await loadCustomerData(false, false);
+                    
+                    // Also refresh call statuses
+                    await loadCallStatuses();
+                    
+                } catch (error) {
+                    console.error('Auto-refresh failed:', error);
+                }
+            }, DATA_REFRESH_INTERVAL);
+            
+            // Show notification about auto-refresh
+            showToast('Auto-refresh enabled: Data will update every minute', 'info', 4000);
+        }
+
         function showLoading(show) {
             const tbody = document.getElementById('customerTableBody');
             if (show) {
@@ -3079,11 +3419,16 @@
             logEntry.innerHTML = `<strong>${timestamp} IST</strong> ${message}`;
             
             const activityLog = document.getElementById('activityLog');
-            activityLog.insertBefore(logEntry, activityLog.firstChild);
-            
-            // Keep only last 50 entries
-            while (activityLog.children.length > 50) {
-                activityLog.removeChild(activityLog.lastChild);
+            if (activityLog) {
+                activityLog.insertBefore(logEntry, activityLog.firstChild);
+                
+                // Keep only last 50 entries
+                while (activityLog.children.length > 50) {
+                    activityLog.removeChild(activityLog.lastChild);
+                }
+            } else {
+                // Fallback to console if element doesn't exist yet
+                console.log(`${timestamp} IST - ${message}`);
             }
         }
 
@@ -3142,8 +3487,27 @@
 
         // Cleanup on page unload
         window.addEventListener('beforeunload', function() {
+            console.log('🧹 Cleaning up dashboard resources...');
             if (refreshInterval) clearInterval(refreshInterval);
+            if (autoRefreshInterval) clearInterval(autoRefreshInterval);
+            if (dataRefreshInterval) clearInterval(dataRefreshInterval);
             if (ws) ws.close();
+        });
+
+        // Handle page visibility changes for better performance
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                // Page is hidden, pause auto-refresh
+                console.log('📴 Page hidden, pausing auto-refresh');
+                if (dataRefreshInterval) {
+                    clearInterval(dataRefreshInterval);
+                    dataRefreshInterval = null;
+                }
+            } else {
+                // Page is visible again, resume auto-refresh
+                console.log('👁️ Page visible, resuming auto-refresh');
+                setupHotReloading();
+            }
         });
     </script>
 </body>
